@@ -86,7 +86,7 @@ a:focus {
   border-color: transparent;
 }
 .navbar-custom .navbar-brand {
-  color: #cb875f;
+  color: #fff;
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
   /*font-family: "Courier";*/
 }
@@ -94,7 +94,7 @@ a:focus {
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
-  color: #daab8f;
+  color: #1ec503;
 }
 .navbar-custom .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
@@ -123,18 +123,18 @@ a:focus {
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #daab8f;
+  color: #1ec503;
   outline: none;
 }
 .navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
-  color: white;
-  background-color: #daab8f;
+  color: #1ec503;
+  background-color: #000;
 }
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
-  color: white;
-  background-color: #daab8f;
+  color: #1ec503;
+  background-color: #000;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -423,7 +423,8 @@ header span{
   }
 }
 section {
-  padding: 100px 0;
+  padding: 0px 0;
+  padding-top: 0px;
 }
 section h2.section-heading {
   font-size: 40px;
@@ -437,7 +438,7 @@ section h3.section-subheading {
   text-transform: none;
   font-style: italic;
   font-weight: 400;
-  margin-bottom: 75px;
+  margin-bottom: 0px;
 }
 @media (min-width: 768px) {
   section {
@@ -565,11 +566,11 @@ section h3.section-subheading {
 .timeline-image a, .timeline-image p {
   color: #FFF;
   font-size: 15px;
-  padding-bottom: 0em 15px;
-  margin-bottom: 15px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
   opacity: 0;
   filter: alpha(opacity=0);
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
   -webkit-transform: translate3d(0,100%,0);
   transform: translate3d(0,100%,0);
@@ -809,8 +810,11 @@ section h3.section-subheading {
   border-top: 5px solid #cb875f;
 }
 .story-section {
+  position: relative;
+  display: table;
   width: 100%;
-  padding: 50px 0;
+  padding-bottom: 0px;
+  padding-top: 0px;
   color: black;
   background-color: white;
   -webkit-background-size: cover;
@@ -853,7 +857,7 @@ section h3.section-subheading {
     padding-top: 150px;
   }
   .story-section {
-    padding: 100px 0;
+    padding: 0px 0;
   }
   .skills-section {
     padding: 100px 0;
@@ -872,8 +876,9 @@ section h3.section-subheading {
 .btn {
   position: relative;
   text-transform: uppercase;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  /*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-family: "Courier";
+  font-weight: 400
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
