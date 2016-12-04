@@ -24,6 +24,7 @@
 
   <!-- Google Chart Script -->
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <link rel="stylesheet" href="vendor/chartist/chartist.min.css">
 
   <!-- Styled buttons JS -->
   <script src="js/modernizr.custom.js"></script>
@@ -319,17 +320,51 @@
             </section>
 
             <!-- Skills Section -->
-            <section id="skills" class="skills-section text-center" style="padding-top: 100px;">
-              <div class="row">
-                <h2 class="section-heading">Skills</h2>
-                <h3 class="section-subheading text-muted">Or how to quantify my improvement level</h3>
+            <section id="skills" class="skills-section text-center" style="padding-top: 0px;">
+              <div class="row" style="padding-top: 0px;">
+                <div class="col-sm-6" style="border-right: solid; border-width: 1px; border-color: #1ec503; height: 50px"></div>
+                <div class="col-sm-6"></div>
               </div>
-              <div class="row">
+              <div class="row" style="padding-top:0px; padding-bottom: 0px;">
                 <div class="col-sm-4"></div>
-                <div class="col-sm-5" style="border-bottom: dashed; border-width: 2px; border-color: grey;"></div>
-                <div class="col-sm-1"></div>
+                <div class="col-sm-4 text-center" style="border-style: solid; border-width: 1px; border-color: #1ec503; border-radius:18px;">
+                  <div><h2 class="section-heading">Skills</h2>
+                  <h3 class="section-subheading text-muted">What I've learned through education, work and life</h3></div>
+                </div>
+                <div class="col-sm-2" style="border-bottom: solid; border-width: 1px; border-color: #1ec503; height: 35px;"></div>
+                <div class="col-sm-2" style="height: 150px;">
+                  <div style="height: 35px; width: 230px;"></div>
+                  <div style="height: 30px;"></div>
+                </div>
               </div>
-              <div class="row" style="min-height: 300px;">
+              <div class="row">
+                <div class="col-sm-2" style="text-align: center;"></div>
+                <div class="col-sm-8" style="text-align: center; vertical-align: text-bottom;"><p style="margin: 0px; line-height: 1;">Programming languages I know</p></div>
+                <div class="col-sm-2" style="text-align: center; border-left: solid; border-width: 1px; border-color: #1ec503; height: 20px;"></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-2" style="text-align: center;"></div>
+                <div class="col-sm-2" style="padding-top: 20px; border-top: solid; border-left: solid; border-width: 1px; border-color: #1ec503; text-align: center;" class="ct-chart ct-perfect-fourth" id="chart1">HTML5/CSS3</div>
+                <div class="col-sm-2" style="padding-top: 20px; border-top: solid; border-width: 1px; border-color: #1ec503;  text-align: center;" class="ct-chart ct-golden-section" id="chart2">JavaScript</div>
+                <div class="col-sm-2" style="padding-top: 20px; border-top: solid; border-width: 1px; border-color: #1ec503;  text-align: center;" class="ct-chart ct-golden-section" id="chart3">C++</div>
+                <div class="col-sm-2" style="padding-top: 20px; border-top: solid; border-width: 1px; border-color: #1ec503;  text-align: center;" class="ct-chart ct-golden-section" id="chart4">Java</div>
+                <div class="col-sm-2" style="text-align: center;"></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-2" style="text-align: center; border-right: solid; border-width: 1px; border-color: #1ec503; height: 20px;"></div>
+                <div class="col-sm-8" style="text-align: center; vertical-align: text-bottom;"><p style="margin: 0px; line-height: 1;">Languages I speak, read and write</p></div>
+                <div class="col-sm-2" style="text-align: center;"></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-2" style="text-align: center;"></div>
+                <div class="col-sm-1" style="text-align: center; border-bottom: solid; border-width: 1px; border-color: #1ec503;"></div>
+                <div class="col-sm-2" style="padding-top: 20px; border-top: solid; border-width: 1px; border-color: #1ec503; text-align: center;" class="ct-chart ct-perfect-fourth" id="chartfr">French</div>
+                <div class="col-sm-2" style="padding-top: 20px; border-top: solid; border-width: 1px; border-color: #1ec503;  text-align: center;" class="ct-chart ct-golden-section" id="charten">English</div>
+                <div class="col-sm-2" style="padding-top: 20px; border-top: solid; border-width: 1px; border-color: #1ec503;  text-align: center;" class="ct-chart ct-golden-section" id="chartsp">Spanish</div>
+                <div class="col-sm-1" style="text-align: center; border-bottom: solid; border-width: 1px; border-color: #1ec503;"></div>
+                <div class="col-sm-2" style="text-align: center;"></div>
+              </div>
+              <!--<div class="row" style="min-height: 300px;">
                 <div class="col-sm-5" style="vertical-align: middle; padding-top: 120px; text-align: right;">
                   <p>Programming languages I know</p>
                 </div>
@@ -340,17 +375,12 @@
                 <div class="col-sm-5" style="border-bottom: dashed; border-width: 2px; border-color: grey;"></div>
                 <div class="col-sm-1"></div>
               </div>
-              <div class="row" style="min-height: 250px;">
+              <div class="row" style="min-height: 250px;" id="charts">
                 <div class="col-sm-5" style="vertical-align: middle; padding-top: 80px; text-align: right;">
                   <p>Languages I speak, read and write</p>
                 </div>
                 <div id="chart_div2" class="col-sm-1" style="text-align: left;"></div>
-              </div>
-              <div class="row">
-                <div class="col-sm-4"></div>
-                <div class="col-sm-5" style="border-bottom: dashed; border-width: 2px; border-color: grey;"></div>
-                <div class="col-sm-1"></div>
-              </div>
+              </div> -->
               <div class="row">
                 <div class="col-sm-4" style="vertical-align: middle; padding-top: 50px; text-align: right;">
                   <p>MOOCS</p>
@@ -415,6 +445,9 @@
           <!-- Pop-up windows JS -->
           <script src="js/classie.js"></script>
           <script src="js/modalEffects.js"></script>
+
+          <!-- Chartist Charts -->
+          <script src="vendor/chartist/chartist.min.js"></script>
 
           <!-- jQuery -->
           <script src="vendor/jquery/jquery.js"></script>

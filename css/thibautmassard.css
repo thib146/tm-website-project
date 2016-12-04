@@ -81,6 +81,20 @@ a:focus {
   width: 600px;
   height: 30px;
 }
+.ct-chart {
+  padding-top: 20px;
+  margin-top: 0px;
+}
+.ct-series-a .ct-slice-donut {
+  stroke: #1ec503;
+  stroke-linecap: round;
+}
+.ct-label {
+    font-size: 15px;
+    color: white;
+    fill: white;
+    font-family: "Courier";
+}
 .navbar-custom {
   background-color: #222222;
   border-color: transparent;
@@ -826,7 +840,7 @@ section h3.section-subheading {
   width: 100%;
   padding: 50px 0;
   color: 03396c;
-  background-image: url('../img/intro-bg2-1.jpg');
+  /*background-image: url('../img/intro-bg2-1.jpg');*/
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
