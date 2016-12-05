@@ -51,70 +51,64 @@
     series: [60]
   }, {
     donut: true,
-    donutWidth: 20,
+    donutWidth: 15,
     startAngle: 270,
     total: 200,
   });
-
   // Initialize a Line chart in the container with the ID chart2
   var chart2 = new Chartist.Pie('#chart2', {
     labels: ['40%'],
     series: [40]
   }, {
     donut: true,
-    donutWidth: 20,
+    donutWidth: 15,
     startAngle: 270,
     total: 200,
   });
-
   // Initialize a Line chart in the container with the ID chart3
   var chart3 = new Chartist.Pie('#chart3', {
     labels: ['50%'],
     series: [50]
   }, {
     donut: true,
-    donutWidth: 20,
+    donutWidth: 15,
     startAngle: 270,
     total: 200,
   });
-
   // Initialize a Line chart in the container with the ID chart2
   var chart4 = new Chartist.Pie('#chart4', {
     labels: ['50%'],
     series: [50]
   }, {
     donut: true,
-    donutWidth: 20,
+    donutWidth: 15,
     startAngle: 270,
     total: 200,
   });
-
   var chartfr = new Chartist.Pie('#chartfr', {
     labels: ['100%'],
     series: [100]
   }, {
     donut: true,
-    donutWidth: 20,
+    donutWidth: 15,
     startAngle: 270,
     total: 200,
   });
-
   var charten = new Chartist.Pie('#charten', {
     labels: ['100%'],
     series: [100]
   }, {
     donut: true,
-    donutWidth: 20,
+    donutWidth: 15,
     startAngle: 270,
     total: 200,
   });
-
   var chartsp = new Chartist.Pie('#chartsp', {
     labels: ['50%'],
     series: [50]
   }, {
     donut: true,
-    donutWidth: 20,
+    donutWidth: 15,
     startAngle: 270,
     total: 200,
   });
@@ -227,7 +221,83 @@
       data.element.animate(animationDefinition, false);
     }
   });
+  chartfr.on('draw', function(data) {
+    if(data.type === 'slice') {
+      var pathLength = data.element._node.getTotalLength();
+      data.element.attr({
+        'stroke-dasharray': pathLength + 'px ' + pathLength + 'px'
+      });
+      var animationDefinition = {
+        'stroke-dashoffset': {
+          id: 'anim' + data.index,
+          dur: 2000,
+          from: -pathLength + 'px',
+          to:  '0px',
+          easing: Chartist.Svg.Easing.easeOutQuint,
+          fill: 'freeze'
+        }
+      };
+      if(data.index !== 0) {
+        animationDefinition['stroke-dashoffset'].begin = 'anim' + (data.index - 1) + '.end';
+      }
+      data.element.attr({
+        'stroke-dashoffset': -pathLength + 'px'
+      });
+      data.element.animate(animationDefinition, false);
+    }
+  });
+  charten.on('draw', function(data) {
+    if(data.type === 'slice') {
+      var pathLength = data.element._node.getTotalLength();
+      data.element.attr({
+        'stroke-dasharray': pathLength + 'px ' + pathLength + 'px'
+      });
+      var animationDefinition = {
+        'stroke-dashoffset': {
+          id: 'anim' + data.index,
+          dur: 2000,
+          from: -pathLength + 'px',
+          to:  '0px',
+          easing: Chartist.Svg.Easing.easeOutQuint,
+          fill: 'freeze'
+        }
+      };
+      if(data.index !== 0) {
+        animationDefinition['stroke-dashoffset'].begin = 'anim' + (data.index - 1) + '.end';
+      }
+      data.element.attr({
+        'stroke-dashoffset': -pathLength + 'px'
+      });
+      data.element.animate(animationDefinition, false);
+    }
+  });
+  chartsp.on('draw', function(data) {
+    if(data.type === 'slice') {
+      var pathLength = data.element._node.getTotalLength();
+      data.element.attr({
+        'stroke-dasharray': pathLength + 'px ' + pathLength + 'px'
+      });
+      var animationDefinition = {
+        'stroke-dashoffset': {
+          id: 'anim' + data.index,
+          dur: 2000,
+          from: -pathLength + 'px',
+          to:  '0px',
+          easing: Chartist.Svg.Easing.easeOutQuint,
+          fill: 'freeze'
+        }
+      };
+      if(data.index !== 0) {
+        animationDefinition['stroke-dashoffset'].begin = 'anim' + (data.index - 1) + '.end';
+      }
+      data.element.attr({
+        'stroke-dashoffset': -pathLength + 'px'
+      });
+      data.element.animate(animationDefinition, false);
+    }
+  });
 
+  /*
   // Load the Visualization API and the corechart package.
   google.charts.load('current', {'packages':['corechart']});
 
@@ -264,7 +334,7 @@
 
       // Instantiate and draw our chart, passing in some options.
       var container = document.getElementById('chart_div');
-      var chart = new google.visualization.BarChart(container);
+      var chart = new google.visualization.BarChart(container);     */
 
       /*var colors = ['#f14a29', '#63a814', '#0055a4', '#683591'];
 
@@ -283,12 +353,12 @@
       column.setAttribute('ry', 15);
     }
   });
-}*/
-
-chart.draw(data, options);
 }
 
-function drawChartLanguages() {
+//chart.draw(data, options);
+}*/
+
+/*function drawChartLanguages() {
   // Create the data table.
   var data = new google.visualization.arrayToDataTable([
     ['Language', 'P1', { role: 'style' }, 'P2', { role: 'style' }, 'P3', { role: 'style' }, {role: 'annotation'}],
@@ -337,7 +407,7 @@ function drawChartLanguages() {
         // unbind event not to load scrolls again
         $(document).unbind('scroll');
       }
-    });
+    });*/
 
     /*// Text animations - Story section
     window.onscroll = function() {moveRightPrepaText2()};
