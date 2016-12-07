@@ -1,4 +1,4 @@
-// Thibaut Massard JavaScript
+// Thibaut Massard - JavaScript functions
 
 (function($) {
   "use strict"; // Start of use strict
@@ -44,7 +44,11 @@
   sr.reveal('.image4', {delay:300});
   sr.reveal('.image5', {delay:300});
   sr.reveal('.image6', {delay:300});
-
+  sr.reveal('.java', {delay:300});
+  sr.reveal('.cpp', {delay:500});
+  sr.reveal('.javascript', {delay:700});
+  sr.reveal('.html', {delay:900});
+  
   // Initialize a Line chart in the container with the ID chart1
   var chart1 = new Chartist.Pie('#chart1', {
     labels: ['60%'],
@@ -395,10 +399,10 @@
 
       chart.draw(data, options);
       //chart.draw(data, google.charts.Bar.convertOptions(options));
-    }
+    }*/
 
     // Draw/animate the charts when the user reaches "Charts"
-    $(document).bind('scroll', function(ev) {
+    /*$(document).bind('scroll', function(ev) {
       var scrollOffset = $(document).scrollTop();
       var containerOffset = $('#charts').offset().top - window.innerHeight;
       if (scrollOffset > containerOffset) {
@@ -409,7 +413,7 @@
       }
     });*/
 
-    /*// Text animations - Story section
+    /* Text animations - Story section
     window.onscroll = function() {moveRightPrepaText2()};
     function moveRightPrepaText2() {
       if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
@@ -433,6 +437,17 @@
         document.getElementById('trexia2').className = "slideRight";
       }
     }*/
+	
+	window.onscroll = function() {borders()};
+    function borders() {
+      if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+        document.getElementById('ib1').className += " intro-border1-animation";
+        document.getElementById('ib2').className += " intro-border2-animation";
+        document.getElementById('ib3').className += " intro-border3-animation";
+        document.getElementById('ib4').className += " intro-border4-animation";
+        document.getElementById('ib5').className += " intro-border5-animation";
+      }
+	}
 
     // Background scrolls speeds
     $("#parallax").each(function() {
