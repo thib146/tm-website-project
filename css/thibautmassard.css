@@ -259,7 +259,7 @@ a:focus {
 	-webkit-animation: border-anim 0.7s forwards;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: 1;
-	-webkit-animation-delay: 0s;
+	-webkit-animation-delay: 0.3s;
 }
 .intro-border2 {
 	border-style: solid; 
@@ -277,7 +277,7 @@ a:focus {
 	border-right: solid; 
 	border-width: 1px; 
 	border-color: transparent; 
-	height: 150px;
+	height: 30px;
 }
 .intro-border3-animation {
 	-webkit-animation: border-anim 0.5s forwards;
@@ -286,6 +286,70 @@ a:focus {
 	-webkit-animation-delay: 0.7s;
 }
 .intro-border4 {
+	border-top: solid; 
+	border-left: solid; 
+	border-width: 1px; 
+	border-color: transparent; 
+	height: 30px;
+}
+.intro-border4-animation {
+	-webkit-animation: border-anim 0.7s forwards;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 0.9s;
+}
+.intro-border5 {
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: transparent; 
+	padding: 5px;
+	padding-bottom: 0px; 
+	border-radius:25px;
+}
+.intro-border5-animation {
+	-webkit-animation: border-anim 0.5s forwards;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 1.1s;
+}
+.intro-border6 {
+	border-left: solid; 
+	border-width: 1px; 
+	border-color: transparent; 
+	height: 30px;
+}
+.intro-border6-animation {
+	-webkit-animation: border-anim 0.7s forwards;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 1.3s;
+}
+.intro-border7 {
+	border-top: solid; 
+	border-width: 1px; 
+	border-color: transparent; 
+	height: 30px;
+}
+.intro-border7-animation {
+	-webkit-animation: border-anim 0.7s forwards;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 1.5s;
+}
+.intro-border8 {
+	border-top: solid; 
+	border-right: solid; 
+	border-width: 1px; 
+	border-color: transparent; 
+	height: 30px;
+}
+.intro-border8-animation {
+	-webkit-animation: border-anim 0.7s forwards;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 1.7s;
+}
+.intro-border9 {
 	border-style: solid; 
 	border-width: 1px; 
 	border-color: transparent; 
@@ -293,19 +357,80 @@ a:focus {
 	padding-bottom: 20px; 
 	border-radius:25px;
 }
-.intro-border4-animation {
+.intro-border9-animation {
 	-webkit-animation: border-anim 0.5s forwards;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: 1;
-	-webkit-animation-delay: 0.9s;
+	-webkit-animation-delay: 1.9s;
 }
-.intro-border5 {
+.intro-border10 {
+	border-right: solid; 
+	border-bottom: solid; 
+	border-width: 1px; 
+	border-color: transparent; 
+	height: 30px;
+}
+.intro-border10-animation {
+	-webkit-animation: border-anim 0.7s forwards;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 2.1s;
+}
+.intro-border11 {
 	border-right: solid; 
 	border-width: 1px; 
 	border-color: transparent; 
-	height: 120px;
+	height: 50px;
 }
-.intro-border5-animation {
+.intro-border11-animation {
+	-webkit-animation: border-anim 0.5s forwards;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 2.3s;
+}
+.story-border1 {
+	border-right: solid; 
+	border-width: 1px; 
+	border-color: transparent; 
+	height: 50px;
+}
+.story-border1-animation {
+	-webkit-animation: border-anim 0.5s forwards;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 0.3s;
+}
+.story-border2 {
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: transparent; 
+	border-radius:18px;
+}
+.story-border2-animation {
+	-webkit-animation: border-anim 0.5s forwards;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 0.5s;
+}
+.story-border3 {
+	border-right: solid; 
+	border-width: 1px; 
+	border-color:transparent; 
+	height: 100px;
+}
+.story-border3-animation {
+	-webkit-animation: border-anim 0.5s forwards;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 0.7s;
+}
+.story-border5 {
+	border-right: solid; 
+	border-width: 1px; 
+	border-color: transparent; 
+	height: 50px;
+}
+.story-border5-animation {
 	-webkit-animation: border-anim 0.5s forwards;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: 1;
@@ -576,9 +701,23 @@ section h3.section-subheading {
   position: absolute;
   content: "";
   width: 1px;
-  background-color: #1ec503;
+  background-color: white;
   left: 40px;
   margin-left: -1.5px;
+}
+.timeline-animation:before {
+	-webkit-animation: timeline-anim 0.7s forwards;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 0.9s;
+}
+@-webkit-keyframes timeline-anim {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: #1ec503;
+  }
 }
 .timeline > li {
   margin-bottom: 50px;
@@ -626,7 +765,6 @@ section h3.section-subheading {
   text-align: center;
   overflow: hidden;
 }
-
 .timeline-image .overlay {
   position: absolute;
   overflow: hidden;
@@ -845,7 +983,7 @@ section h3.section-subheading {
   -o-background-size: cover;
   text-align: center;
   color: white;
-  height: 100vh;
+  padding-bottom: 50px;
 }
 .intro-section {
   position: relative;
@@ -984,6 +1122,9 @@ section h3.section-subheading {
   }
   .projects-section {
     padding: 0px 0;
+  }
+  .contact-section {
+    padding-bottom: 50px;
   }
   #map {
     height: 400px;
