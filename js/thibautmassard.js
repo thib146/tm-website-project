@@ -44,17 +44,17 @@
   sr.reveal('.image4', {delay:300});
   sr.reveal('.image5', {delay:300});
   sr.reveal('.image6', {delay:300});
-  sr.reveal('.java', {delay:300});
-  sr.reveal('.cpp', {delay:500});
-  sr.reveal('.javascript', {delay:700});
-  sr.reveal('.html', {delay:900});
+  sr.reveal('.java', {delay:1100});
+  sr.reveal('.cpp', {delay:1300});
+  sr.reveal('.javascript', {delay:1600});
+  sr.reveal('.html', {delay:1800});
   sr.reveal('.lfr', {delay:300});
   sr.reveal('.len', {delay:500});
   sr.reveal('.lsp', {delay:700});
   sr.reveal('.mjava', {delay:300});
   sr.reveal('.mweb', {delay:500});
   sr.reveal('.mgame', {delay:700});
-  
+
   // HTML/CSS Chart
   var chart1 = new Chartist.Pie('#chart1', {
     labels: ['60%'],
@@ -125,7 +125,7 @@
     startAngle: 270,
     total: 200,
   });
-  
+
   // General function to draw the charts with an animation
   function drawChartTM (chart)
   {
@@ -163,7 +163,7 @@
 	}
 	});
   }
-  
+
   // Draw all the charts
   drawChartTM(chart1);
   drawChartTM(chart2);
@@ -172,7 +172,7 @@
   drawChartTM(chartfr);
   drawChartTM(charten);
   drawChartTM(chartsp);
-	
+
   // Border reveal throughout the page, depending on the window level in px
   window.onscroll = function() {borders()};
   function borders() {
@@ -195,6 +195,24 @@
 	  document.getElementById('sb3').className += " story-border3-animation";
 	  document.getElementById('sb4').className += " timeline-animation";
 	  document.getElementById('sb5').className += " story-border5-animation";
+    }
+    if (document.body.scrollTop > 3600 || document.documentElement.scrollTop > 3600) {
+	  document.getElementById('skb1').className += " skills-border1-animation";
+    document.getElementById('skb2').className += " skills-border2-animation";
+    document.getElementById('skb3').className += " skills-border3-animation";
+    document.getElementById('skb4').className += " skills-border4-animation";
+    document.getElementById('skb5').className += " skills-border5-animation";
+    document.getElementById('skb6').className += " skills-border6-animation";
+    document.getElementById('skb7').className += " skills-border7-animation";
+    document.getElementById('skb8').className += " skills-border8-animation";
+    document.getElementById('skb9').className += " skills-border9-animation";
+    document.getElementById('skb10').className += " skills-border10-animation";
+    document.getElementById('skb11').className += " skills-border11-animation";
+    document.getElementById('skb12').className += " skills-border12-animation";
+    document.getElementById('skb13').className += " skills-border13-animation";
+    document.getElementById('skb14').className += " skills-border14-animation";
+    document.getElementById('skb15').className += " skills-border15-animation";
+
     }
   }
 

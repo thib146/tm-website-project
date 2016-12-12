@@ -224,35 +224,19 @@ a:focus {
 }
 /*////////////////// BORDERS ///////////////////*/
 .header-border {
-	border-right: solid; 
-	border-width: 1px; 
-	border-color: transparent; 
+	border-right: solid;
+	border-width: 1px;
+	border-color: transparent;
 	height: 200px;
-	-webkit-animation: header-border1 1s forwards;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: 1;
+	-webkit-animation: border-anim 1s forwards;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
 	-webkit-animation-delay: 5.2s;
 }
-@-webkit-keyframes header-border1 {
-  0% {
-    border-color: transparent;
-  }
-  100% {
-    border-color: #1ec503;
-  }
-}
-@-moz-keyframes header-border1 {
-  0% {
-	border-color: transparent;
-  }
-  100% {
-	border-color: #1ec503;
-  }
-}
 .intro-border1 {
-	border-right: solid; 
-	border-width: 1px; 
-	border-color: transparent; 
+	border-right: solid;
+	border-width: 1px;
+	border-color: transparent;
 	height: 50px;
 }
 .intro-border1-animation {
@@ -262,9 +246,9 @@ a:focus {
 	-webkit-animation-delay: 0.3s;
 }
 .intro-border2 {
-	border-style: solid; 
-	border-width: 1px; 
-	border-color: transparent; 
+	border-style: solid;
+	border-width: 1px;
+	border-color: transparent;
 	border-radius:18px;
 }
 .intro-border2-animation {
@@ -274,9 +258,9 @@ a:focus {
 	-webkit-animation-delay: 0.5s;
 }
 .intro-border3 {
-	border-right: solid; 
-	border-width: 1px; 
-	border-color: transparent; 
+	border-right: solid;
+	border-width: 1px;
+	border-color: transparent;
 	height: 30px;
 }
 .intro-border3-animation {
@@ -286,10 +270,10 @@ a:focus {
 	-webkit-animation-delay: 0.7s;
 }
 .intro-border4 {
-	border-top: solid; 
-	border-left: solid; 
-	border-width: 1px; 
-	border-color: transparent; 
+	border-top: solid;
+	border-left: solid;
+	border-width: 1px;
+	border-color: transparent;
 	height: 30px;
 }
 .intro-border4-animation {
@@ -299,11 +283,11 @@ a:focus {
 	-webkit-animation-delay: 0.9s;
 }
 .intro-border5 {
-	border-style: solid; 
-	border-width: 1px; 
-	border-color: transparent; 
+	border-style: solid;
+	border-width: 1px;
+	border-color: transparent;
 	padding: 5px;
-	padding-bottom: 0px; 
+	padding-bottom: 0px;
 	border-radius:25px;
 }
 .intro-border5-animation {
@@ -313,9 +297,9 @@ a:focus {
 	-webkit-animation-delay: 1.1s;
 }
 .intro-border6 {
-	border-left: solid; 
-	border-width: 1px; 
-	border-color: transparent; 
+	border-left: solid;
+	border-width: 1px;
+	border-color: transparent;
 	height: 30px;
 }
 .intro-border6-animation {
@@ -325,9 +309,9 @@ a:focus {
 	-webkit-animation-delay: 1.3s;
 }
 .intro-border7 {
-	border-top: solid; 
-	border-width: 1px; 
-	border-color: transparent; 
+	border-top: solid;
+	border-width: 1px;
+	border-color: transparent;
 	height: 30px;
 }
 .intro-border7-animation {
@@ -337,10 +321,10 @@ a:focus {
 	-webkit-animation-delay: 1.5s;
 }
 .intro-border8 {
-	border-top: solid; 
-	border-right: solid; 
-	border-width: 1px; 
-	border-color: transparent; 
+	border-top: solid;
+	border-right: solid;
+	border-width: 1px;
+	border-color: transparent;
 	height: 30px;
 }
 .intro-border8-animation {
@@ -350,11 +334,11 @@ a:focus {
 	-webkit-animation-delay: 1.7s;
 }
 .intro-border9 {
-	border-style: solid; 
-	border-width: 1px; 
-	border-color: transparent; 
-	padding:5px; 
-	padding-bottom: 20px; 
+	border-style: solid;
+	border-width: 1px;
+	border-color: transparent;
+	padding:5px;
+	padding-bottom: 20px;
 	border-radius:25px;
 }
 .intro-border9-animation {
@@ -364,10 +348,10 @@ a:focus {
 	-webkit-animation-delay: 1.9s;
 }
 .intro-border10 {
-	border-right: solid; 
-	border-bottom: solid; 
-	border-width: 1px; 
-	border-color: transparent; 
+	border-right: solid;
+	border-bottom: solid;
+	border-width: 1px;
+	border-color: transparent;
 	height: 30px;
 }
 .intro-border10-animation {
@@ -377,9 +361,9 @@ a:focus {
 	-webkit-animation-delay: 2.1s;
 }
 .intro-border11 {
-	border-right: solid; 
-	border-width: 1px; 
-	border-color: transparent; 
+	border-right: solid;
+	border-width: 1px;
+	border-color: transparent;
 	height: 50px;
 }
 .intro-border11-animation {
@@ -389,9 +373,9 @@ a:focus {
 	-webkit-animation-delay: 2.3s;
 }
 .story-border1 {
-	border-right: solid; 
-	border-width: 1px; 
-	border-color: transparent; 
+	border-right: solid;
+	border-width: 1px;
+	border-color: transparent;
 	height: 50px;
 }
 .story-border1-animation {
@@ -401,9 +385,9 @@ a:focus {
 	-webkit-animation-delay: 0.3s;
 }
 .story-border2 {
-	border-style: solid; 
-	border-width: 1px; 
-	border-color: transparent; 
+	border-style: solid;
+	border-width: 1px;
+	border-color: transparent;
 	border-radius:18px;
 }
 .story-border2-animation {
@@ -413,9 +397,9 @@ a:focus {
 	-webkit-animation-delay: 0.5s;
 }
 .story-border3 {
-	border-right: solid; 
-	border-width: 1px; 
-	border-color:transparent; 
+	border-right: solid;
+	border-width: 1px;
+	border-color:transparent;
 	height: 100px;
 }
 .story-border3-animation {
@@ -425,9 +409,9 @@ a:focus {
 	-webkit-animation-delay: 0.7s;
 }
 .story-border5 {
-	border-right: solid; 
-	border-width: 1px; 
-	border-color: transparent; 
+	border-right: solid;
+	border-width: 1px;
+	border-color: transparent;
 	height: 50px;
 }
 .story-border5-animation {
@@ -436,12 +420,205 @@ a:focus {
     -webkit-animation-iteration-count: 1;
 	-webkit-animation-delay: 1.1s;
 }
+.skills-border1 {
+  border-right: solid;
+  border-width: 1px;
+  border-color: transparent;
+  height: 50px;
+}
+.skills-border1-animation {
+	-webkit-animation: border-anim 0.5s forwards;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 0.3s;
+}
+.skills-border2 {
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+  border-radius:18px;
+}
+.skills-border2-animation {
+	-webkit-animation: border-anim 0.5s forwards;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 0.5s;
+}
+.skills-border3 {
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: transparent;
+  height:35px;
+}
+.skills-border3-animation {
+	-webkit-animation: border-anim 0.5s forwards;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 0.7s;
+}
+.skills-border4 {
+  height: 115px;
+  width: 230px;
+  border-left: solid;
+  border-width: 1px;
+  border-color: transparent;
+  float: left;
+}
+.skills-border4-animation {
+	-webkit-animation: border-anim 0.5s forwards;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 0.9s;
+}
+.skills-border5 {
+  text-align: center;
+  vertical-align: text-bottom;
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: transparent;
+}
+.skills-border5-animation {
+	-webkit-animation: border-anim 0.5s forwards;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 1.1s;
+}
+.skills-border6 {
+  text-align: center;
+  height: 20px;
+  border-left: solid;
+  border-width: 1px;
+  border-color: transparent;
+}
+.skills-border6-animation {
+	-webkit-animation: border-anim 0.5s forwards;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 1.3s;
+}
+.skills-border7 {
+  border-right: solid;
+  border-width: 1px;
+  border-color: transparent;
+  height: 350px;
+}
+.skills-border7-animation {
+	-webkit-animation: border-anim 0.5s forwards;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 1.5s;
+}
+.skills-border8 {
+  text-align: center;
+  height: 20px;
+  border-right: solid;
+  border-width: 1px;
+  border-color: transparent;
+}
+.skills-border8-animation {
+	-webkit-animation: border-anim 0.5s forwards;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 1.7s;
+}
+.skills-border9 {
+  text-align: center;
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: transparent;
+}
+.skills-border9-animation {
+	-webkit-animation: border-anim 0.5s forwards;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 1.9s;
+}
+.skills-border10 {
+  border-right: solid;
+  border-width: 1px;
+  border-color: transparent;
+  height: 350px;
+}
+.skills-border10-animation {
+	-webkit-animation: border-anim 0.5s forwards;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 2.1s;
+}
+.skills-border11 {
+  text-align: center;
+  vertical-align: text-bottom;
+  border-right: solid;
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: transparent;
+}
+.skills-border11-animation {
+	-webkit-animation: border-anim 0.5s forwards;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 2.3s;
+}
+.skills-border12 {
+  border-left: solid;
+  border-width: 1px;
+  border-color: transparent;
+  height: 300px;
+}
+.skills-border12-animation {
+	-webkit-animation: border-anim 0.5s forwards;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 2.5s;
+}
+.skills-border13 {
+  border-top: solid;
+  border-width: 1px;
+  border-color: transparent;
+}
+.skills-border13-animation {
+	-webkit-animation: border-anim 0.5s forwards;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 2.7s;
+}
+.skills-border14 {
+  border-top: solid;
+  border-width: 1px;
+  border-color: transparent;
+}
+.skills-border14-animation {
+	-webkit-animation: border-anim 0.5s forwards;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 2.9s
+}
+.skills-border15 {
+  border-left: solid;
+  border-width: 1px;
+  border-color: transparent;
+  height: 50px;
+}
+.skills-border15-animation {
+	-webkit-animation: border-anim 0.5s forwards;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 3.1s;
+}
 @-webkit-keyframes border-anim {
   0% {
     border-color: transparent;
   }
   100% {
     border-color: #1ec503;
+  }
+}
+@-moz-keyframes border-anim {
+  0% {
+	border-color: transparent;
+  }
+  100% {
+	border-color: #1ec503;
   }
 }
 /*////////////////// END BORDERS ///////////////////*/
@@ -1497,8 +1674,8 @@ body {
 .grid {
 	position: relative;
 	margin: 0 auto;
-	padding: 1em 0 4em;
-	max-width: 1000px;
+	padding: 0em 0 0em;
+	max-width: 1100px;
 	list-style: none;
 	text-align: center;
 }
@@ -1506,15 +1683,17 @@ body {
 	position: relative;
 	float: left;
 	overflow: hidden;
-	margin: 10px 1%;
+	margin: 0px 1%;
+  margin-left: 95px;
+  margin-right: 50px;
 	min-width: 320px;
-	max-width: 480px;
-	max-height: 360px;
+	max-width: 380px;
+	max-height: 300px;
 	width: 48%;
 	background: #3085a3;
 	text-align: center;
 	cursor: pointer;
-	border-radius: 18px;
+	/*border-radius: 18px;*/
 }
 
 .grid figure img {
@@ -1523,6 +1702,7 @@ body {
 	min-height: 100%;
 	max-width: 100%;
 	opacity: 0.8;
+  /*border-radius: 18px;*/
 }
 
 .grid figure figcaption {
@@ -1581,16 +1761,16 @@ body {
 /*---------------*/
 
 figure.effect-layla {
-	background: #000;
+  background: #000;
 }
 
 figure.effect-layla img {
-	height: 390px;
-	border-radius: 18px;
+	height: 350px;
+	/*border-radius: 18px;*/
 }
 
 figure.effect-layla figcaption {
-	padding: 3em;
+	padding: 2em;
 }
 
 figure.effect-layla figcaption::before,
@@ -1601,10 +1781,10 @@ figure.effect-layla figcaption::after {
 }
 
 figure.effect-layla figcaption::before {
-	top: 50px;
-	right: 30px;
-	bottom: 50px;
-	left: 30px;
+	top: 30px;
+	right: 15px;
+	bottom: 30px;
+	left: 15px;
 	border-top: 1px solid #1ec503;
 	border-bottom: 1px solid #1ec503;
 	-webkit-transform: scale(0,1);
@@ -1614,10 +1794,10 @@ figure.effect-layla figcaption::before {
 }
 
 figure.effect-layla figcaption::after {
-	top: 30px;
-	right: 50px;
-	bottom: 30px;
-	left: 50px;
+	top: 15px;
+	right: 30px;
+	bottom: 15px;
+	left: 30px;
 	border-right: 1px solid #1ec503;
 	border-left: 1px solid #1ec503;
 	-webkit-transform: scale(1,0);
@@ -1627,13 +1807,13 @@ figure.effect-layla figcaption::after {
 }
 
 figure.effect-layla h2 {
-	padding-top: 26%;
+	padding-top: 6%;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 }
 
 figure.effect-layla p {
-	padding: 0.5em 2em;
+	padding: 2em 1em;
 	text-transform: none;
 	opacity: 0;
 	-webkit-transform: translate3d(0,-10px,0);
