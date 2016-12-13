@@ -105,6 +105,7 @@ a:focus {
     color: white;
     fill: white;
     font-family: "Courier";
+	padding: 0;
 }
 .navbar-custom {
   background-color: #222222;
@@ -227,11 +228,35 @@ a:focus {
 	border-right: solid;
 	border-width: 1px;
 	border-color: transparent;
+	height: 150px;
+	-webkit-animation: border-anim 1s forwards;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 5.2s;
+}
+.desk {
+	display: none;
+}
+.mob {
+	display: initial;
+}
+@media (min-width: 768px) {
+	.header-border {
+	border-right: solid;
+	border-width: 1px;
+	border-color: transparent;
 	height: 200px;
 	-webkit-animation: border-anim 1s forwards;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
 	-webkit-animation-delay: 5.2s;
+	}
+	.mob {
+		display: none;
+	}
+	.desk {
+		display: initial;
+	}
 }
 .intro-border1 {
 	border-right: solid;
@@ -261,20 +286,13 @@ a:focus {
 	border-right: solid;
 	border-width: 1px;
 	border-color: transparent;
-	height: 30px;
+	height: 50px;
 }
 .intro-border3-animation {
 	-webkit-animation: border-anim 0.5s forwards;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: 1;
 	-webkit-animation-delay: 0.7s;
-}
-.intro-border4 {
-	border-top: solid;
-	border-left: solid;
-	border-width: 1px;
-	border-color: transparent;
-	height: 30px;
 }
 .intro-border4-animation {
 	-webkit-animation: border-anim 0.7s forwards;
@@ -297,7 +315,8 @@ a:focus {
 	-webkit-animation-delay: 1.1s;
 }
 .intro-border6 {
-	border-left: solid;
+	border-right: solid;
+	border-left: none;
 	border-width: 1px;
 	border-color: transparent;
 	height: 30px;
@@ -337,9 +356,9 @@ a:focus {
 	border-style: solid;
 	border-width: 1px;
 	border-color: transparent;
-	padding:5px;
+	padding: 5px;
 	padding-bottom: 20px;
-	border-radius:25px;
+	border-radius: 25px;
 }
 .intro-border9-animation {
 	-webkit-animation: border-anim 0.5s forwards;
@@ -372,6 +391,28 @@ a:focus {
     -webkit-animation-iteration-count: 1;
 	-webkit-animation-delay: 2.3s;
 }
+@media (min-width: 768px) {
+	.intro-border3 {
+		border-right: solid;
+		border-width: 1px;
+		border-color: transparent;
+		height: 30px;
+	}
+	.intro-border4 {
+		border-top: solid;
+		border-left: solid;
+		border-width: 1px;
+		border-color: transparent;
+		height: 30px;
+	}
+	.intro-border6 {
+		border-left: solid;
+		border-right: none;
+		border-width: 1px;
+		border-color: transparent;
+		height: 30px;
+	}
+}
 .story-border1 {
 	border-right: solid;
 	border-width: 1px;
@@ -400,7 +441,8 @@ a:focus {
 	border-right: solid;
 	border-width: 1px;
 	border-color:transparent;
-	height: 100px;
+	width: 55px;
+	height: 50px;
 }
 .story-border3-animation {
 	-webkit-animation: border-anim 0.5s forwards;
@@ -412,6 +454,7 @@ a:focus {
 	border-right: solid;
 	border-width: 1px;
 	border-color: transparent;
+	width: 55px;
 	height: 50px;
 }
 .story-border5-animation {
@@ -420,10 +463,27 @@ a:focus {
     -webkit-animation-iteration-count: 1;
 	-webkit-animation-delay: 1.1s;
 }
+@media (min-width: 768px) {
+	.story-border3 {
+		border-right: solid;
+		border-width: 1px;
+		width: 50%;
+		border-color:transparent;
+		height: 100px;
+	}
+	.story-border5 {
+		border-right: solid;
+		border-width: 1px;
+		width: 50%;
+		border-color: transparent;
+		height: 50px;
+	}
+}
 .skills-border1 {
   border-right: solid;
   border-width: 1px;
   border-color: transparent;
+  width: 70px;
   height: 50px;
 }
 .skills-border1-animation {
@@ -445,10 +505,11 @@ a:focus {
 	-webkit-animation-delay: 0.5s;
 }
 .skills-border3 {
-  border-bottom: solid;
+  border-right: solid;
   border-width: 1px;
   border-color: transparent;
-  height:35px;
+  width: 70px;
+  height:50px;
 }
 .skills-border3-animation {
 	-webkit-animation: border-anim 0.5s forwards;
@@ -472,8 +533,8 @@ a:focus {
 }
 .skills-border5 {
   text-align: center;
-  vertical-align: text-bottom;
-  border-bottom: solid;
+  border-style: solid;
+  border-radius: 18px;
   border-width: 1px;
   border-color: transparent;
 }
@@ -500,9 +561,43 @@ a:focus {
   border-right: solid;
   border-width: 1px;
   border-color: transparent;
-  height: 350px;
+  height: 50px;
+}
+.skills-border7-1 {
+	top: 50px;
+	left: -1px;
+	border-left: solid;
+	border-width: 1px;
+	border-color: transparent;
+}
+.skills-border7-2 {
+	top: 50px;
+	left: 60px;
+	border-left: solid;
+	border-width: 1px;
+	border-color: transparent;
+}
+.skills-border7-3 {
+	top: 50px;
+	left: 60px;
+	border-left: solid;
+	border-width: 1px;
+	border-color: transparent;
+}
+.skills-border7-4 {
+	top: 50px;
+	left: 60px;
+	border-left: solid;
+	border-width: 1px;
+	border-color: transparent;
 }
 .skills-border7-animation {
+	-webkit-animation: border-anim 0.5s forwards;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 1.5s;
+}
+.skills-border7-1-animation {
 	-webkit-animation: border-anim 0.5s forwards;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: 1;
@@ -605,6 +700,39 @@ a:focus {
   -webkit-animation-iteration-count: 1;
 	-webkit-animation-delay: 3.1s;
 }
+@media (min-width: 768px) {
+	.skills-border1 {
+	  border-right: solid;
+	  border-width: 1px;
+	  border-color: transparent;
+	  width: 50%;
+	  height: 50px;
+	}
+	.skills-border3 {
+	  border-bottom: solid;
+	  border-right: none;
+	  border-width: 1px;
+	  border-color: transparent;
+	  width: 237px;
+	  height:35px;
+	}
+	.skills-border5 {
+	  text-align: center;
+	  border-top: none;
+	  border-right: none;
+	  border-left: none;
+	  border-bottom: solid;
+	  border-radius: 0px;
+	  border-width: 1px;
+	  border-color: transparent;
+	}
+	.skills-border7 {
+	  border-right: solid;
+	  border-width: 1px;
+	  border-color: transparent;
+	  height: 350px;
+	}
+}
 @-webkit-keyframes border-anim {
   0% {
     border-color: transparent;
@@ -667,8 +795,11 @@ header {
   width: 100%;
   color: #1ec503;
 }
-@media screen and (min-width: 768px){
+/*@media screen and (min-width: 768px){
   .rwd-break { display: none; }
+}*/
+@media screen and (min-width: 768px){
+  .timeline-break { display: none; }
 }
 @-webkit-keyframes move-bg {
   0% {
@@ -698,7 +829,7 @@ header {
   z-index: 1;
 }
 header .intro-text {
-  padding-top: 100px;
+  padding-top: 60px;
   padding-bottom: 0px;
   /*height: 100vh;*/
 }
@@ -709,7 +840,7 @@ header .intro-text .intro-lead-in {
   /*font-style: italic;*/
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 20px;
   line-height: 22px;
   margin-bottom: 25px;
   white-space: nowrap;
@@ -724,8 +855,8 @@ header .intro-text .intro-heading {
   color: #1ec503;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 50px;
-  line-height: 50px;
+  font-size: 20px;
+  line-height: 20px;
   margin-bottom: 25px;
   white-space: nowrap;
   overflow: hidden;
@@ -741,7 +872,7 @@ header .intro-text .intro-heading {
 }
 @keyframes type2{
   from{ width: 0; visibility: visible;}
-  to{ width: 8em; visibility: visible;}
+  to{ width: 15em; visibility: visible;}
 }
 @media screen and (min-width: 768px){
   @keyframes type2{
@@ -755,7 +886,6 @@ header span{
 @keyframes blink{
   to{ opacity: .0;}
 }
-
 @media (min-width: 768px) {
   header .intro-text {
     padding-top: 180px;
@@ -769,6 +899,7 @@ header span{
     font-size: 30px;
     line-height: 40px;
     margin-bottom: 25px;
+	width: 6em;
   }
   header .intro-text .intro-heading {
     font-family: "Courier";
@@ -777,6 +908,7 @@ header span{
     font-size: 30px;
     line-height: 75px;
     margin-bottom: 50px;
+	width: 15em;
   }
 }
 .btn-circle {
@@ -1046,7 +1178,7 @@ section h3.section-subheading {
 .timeline .timeline-heading h4 {
   margin-top: 0;
   color: inherit;
-  line-height: 0;
+  line-height: 1;
 }
 .timeline .timeline-heading h7 {
 }
@@ -1091,6 +1223,11 @@ section h3.section-subheading {
     float: right;
     text-align: left;
     padding: 0 30px 20px 20px;
+  }
+  .timeline .timeline-heading h4 {
+	  margin-top: 0;
+	  color: inherit;
+	  line-height: 0;
   }
 }
 @media (min-width: 992px) {

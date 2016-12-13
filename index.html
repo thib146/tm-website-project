@@ -35,7 +35,7 @@
   <!-- CSS -->
   <link href="css/thibautmassard.css" rel="stylesheet">
 
-  <script src="vendor/canvasjs/canvasjs.min.js"></script>
+  <!--<script src="vendor/canvasjs/canvasjs.min.js"></script>-->
 
 </head>
 
@@ -158,13 +158,15 @@
           <div class="col-sm-4"></div>
           <div class="col-sm-4 intro-text">
             <div class="intro-lead-in">> Welcome</div>
-            <div class="intro-heading"><br class="rwd-break" />> It's Nice <br class="rwd-break" />To Meet You<span>|</span><br></div>
+            <div class="intro-heading"><br class="rwd-break" />> It's Nice <!--<br class="rwd-break" />-->To Meet You<span>|</span><br></div>
             <div class="btnreveal"><a href="#intro" class="btn btn-circle page-scroll"><i class="fa fa-angle-double-down animated"></i></a></div>
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-6 header-border"></div>
-          <div class="col-sm-6"></div>
+          <div class="desk col-sm-6 header-border"></div>
+          <div class="desk col-sm-6"></div>
+		  <div class="mob col-xs-6 header-border"></div>
+          <div class="mob col-xs-6"></div>
         </div>
       </div>
     </header>
@@ -172,57 +174,90 @@
     <!-- Intro Section -->
     <section id="intro" class="intro-section">
       <div class="container">
-        <div class="row">
-          <div id="ib1" class="col-sm-6 intro-border1"></div>
-          <div class="col-sm-6"></div>
+        <div class="desk row">
+          <div id="ib1desk" class="desk col-sm-6 intro-border1"></div>
         </div>
-        <div class="row" style="padding-top:0px;">
+		<div class="mob row">
+		  <div id="ib1mob" class="mob col-xs-6 intro-border1"></div>
+        </div>
+        <div class="desk row" style="padding-top:0px;">
           <div class="col-sm-4"></div>
           <div class="col-sm-4 text-center">
-            <h2 class="section-heading"><div id="ib2" class="intro-border2">About me</div></h2>
+            <h2 class="section-heading">
+			<div id="ib2desk" class="desk intro-border2">About me</div>
+			</h2>
           </div>
         </div>
-        <div class="row" style="padding-bottom: 0px; margin-bottom: 0px;">
-          <div id="ib3" class="col-sm-6 intro-border3"></div>
-          <div class="col-sm-6"></div>
+		<div class="mob row" style="padding-top:0px;">
+          <div class="col-xs-12 text-center">
+            <h2 class="section-heading">
+				<div id="ib2mob" class="mob intro-border2">About me</div>
+			</h2>
+          </div>
         </div>
-        <div class="row" style="padding-bottom: 0px; margin-bottom: 0px;">
+        <div class="desk row" style="padding-bottom: 0px; margin-bottom: 0px;">
+          <div id="ib3desk" class="col-sm-6 intro-border3"></div>
+        </div>
+		<div class="mob row" style="padding-bottom: 0px; margin-bottom: 0px;">
+		  <div id="ib3mob" class="col-xs-6 intro-border3"></div>
+        </div>
+        <div class="desk row" style="padding-bottom: 0px; margin-bottom: 0px;">
           <div class="col-sm-5"></div>
-          <div id="ib4" class="col-sm-1 intro-border4"></div>
+          <div id="ib4desk" class="col-sm-1 intro-border4"></div>
         </div>
-        <div class="row" style="padding-bottom: 0px; margin-bottom: 0px;">
+        <div class="desk row" style="padding-bottom: 0px; margin-bottom: 0px;">
           <div class="col-sm-3"></div>
           <div class="col-sm-3">
-            <div id="ib5" class="headerinner intro-border5">
+            <div id="ib5desk" class="headerinner intro-border5">
               <p style="text-align: left;">> Hi, my name is <a data-toggle="tooltip" title="Pronounced Tee-Bo" data-placement="top" style="color:#fff">Thibaut</a>. I'm a French engineer living in the US.</p>
             </div>
           </div>
         </div>
-        <div class="row" style="padding-bottom: 0px; margin-bottom: 0px;">
-          <div class="col-sm-5"></div>
-          <div id="ib6" class="col-sm-1 intro-border6"></div>
+		<div class="mob row" style="padding-bottom: 0px; margin-bottom: 0px;">
+		  <div class="col-xs-12">
+            <div id="ib5mob" class="headerinner intro-border5">
+              <p style="text-align: left;">> Hi, my name is <a data-toggle="tooltip" title="Pronounced Tee-Bo" data-placement="top" style="color:#fff">Thibaut</a>. I'm a French engineer living in the US.</p>
+            </div>
+          </div>
         </div>
-        <div class="row" style="padding-bottom: 0px; margin-bottom: 0px;">
+        <div class="desk row">
           <div class="col-sm-5"></div>
-          <div id="ib7" class="col-sm-1 intro-border7"></div>
-          <div id="ib8" class="col-sm-1 intro-border8"></div>
+          <div id="ib6desk" class="col-sm-1 intro-border6"></div>
         </div>
-        <div class="row" style="padding-bottom: 0px; margin-bottom: 0px;">
+		<div class="mob row">
+		  <div id="ib6mob" class="col-xs-6 intro-border6"></div>
+        </div>
+        <div class="desk row" style="padding-bottom: 0px; margin-bottom: 0px;">
+          <div class="col-sm-5"></div>
+          <div id="ib7desk" class="col-sm-1 intro-border7"></div>
+          <div id="ib8desk" class="col-sm-1 intro-border8"></div>
+        </div>
+        <div class="desk row" style="padding-bottom: 0px; margin-bottom: 0px;">
           <div class="col-sm-5"></div>
           <div class="col-sm-5">
-            <div id="ib9" class="headerinner intro-border9">
+            <div id="ib9desk" class="headerinner intro-border9">
               <p style="text-align: left;">> With 3 years of project management experience as a consultant on varied subjects and industries, I would now like to take advantage of the skills I developped and use them in an industry I am passionate about and on which I taught myself on my free time : web & app development.</p>
               <button class="btn btn-2 btn-2a color-2"><i class="fa fa-file-pdf-o"></i> Download my resume</button>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-6"></div>
-          <div id="ib10" class="col-sm-1 intro-border10"></div>
+		<div class="mob row" style="padding-bottom: 0px; margin-bottom: 0px;">
+          <div class="col-xs-12">
+            <div id="ib9mob" class="headerinner intro-border9">
+              <p style="text-align: left;">> With 3 years of project management experience as a consultant on varied subjects and industries, I would now like to take advantage of the skills I developped and use them in an industry I am passionate about and on which I taught myself on my free time : web & app development.</p>
+              <button class="btn btn-2 btn-2a color-2"><i class="fa fa-file-pdf-o"></i> Download my resume</button>
+            </div>
+          </div>
         </div>
-        <div class="row">
-          <div id="ib11" class="col-sm-6 intro-border11"></div>
+        <div class="desk row">
           <div class="col-sm-6"></div>
+          <div id="ib10desk" class="col-sm-1 intro-border10"></div>
+        </div>
+        <div class="desk row">
+          <div id="ib11desk" class="col-sm-6 intro-border11"></div>
+        </div>
+		<div class="mob row">
+          <div id="ib11mob" class="col-xs-6 intro-border11"></div>
         </div>
       </div>
     </section>
@@ -230,24 +265,34 @@
     <!-- Story Section -->
     <section id="story" class="story-section">
       <div class="container" style="padding-top: 0px;">
-        <div class="row" style="padding-top: 0px;">
-          <div id="sb1" class="col-sm-6 story-border1"></div>
-          <div class="col-sm-6"></div>
+        <div class="desk row" style="padding-top: 0px;">
+          <div id="sb1desk" class="col-sm-6 story-border1"></div>
         </div>
-        <div class="row" style="padding-top:0px; padding-bottom: 0px;">
+		<div class="mob row" style="padding-top: 0px;">
+          <div id="sb1mob" class="col-xs-6 story-border1"></div>
+        </div>
+        <div class="desk row" style="padding-top:0px; padding-bottom: 0px;">
           <div class="col-sm-4"></div>
           <div class="col-sm-4 text-center">
-            <div id="sb2" class="story-border2"><h2 class="section-heading">Story</h2>
-              <h3 class="section-subheading text-muted">Here is how I ended up here</h3></div>
-            </div>
+            <div id="sb2desk" class="story-border2"><h2 class="section-heading">Story</h2>
+            <h3 class="section-subheading text-muted">Here is how I ended up here</h3></div>
           </div>
-          <div class="row" style="padding-top: 0px;">
-            <div id="sb3" class="col-sm-6 story-border3"></div>
-            <div class="col-sm-6"></div>
+        </div>
+		<div class="mob row" style="padding-top:0px; padding-bottom: 0px;">
+          <div class="col-xs-12 text-center">
+            <div id="sb2mob" class="story-border2"><h2 class="section-heading">Story</h2>
+            <h3 class="section-subheading text-muted">Here is how I ended up here</h3></div>
           </div>
+        </div>
+		<div class="desk row" style="padding-top: 0px;">
+			<div id="sb3desk" class="col-sm-6 story-border3"></div>
+		</div>
+		<div class="mob row" style="padding-top: 0px;">
+			<div id="sb3mob" class="col-xs-2 story-border3"></div>
+		</div>
           <div class="row" style="padding-top:0px;">
             <div class="col-lg-12">
-              <ul id="sb4" class="timeline">
+              <ul id="sb4desk" class="timeline">
                 <li class="image1">
                   <div class="timeline-image">
                     <img class="img-circle img-responsive" src="img/story/eq.jpg" alt="">
@@ -290,7 +335,7 @@
                   </div>
                   <div class="timeline-panel">
                     <div class="timeline-heading" id="safran">
-                      <h4>Aug. 2012-Jan. 2013</h4>
+                      <h4>Aug. 2012-<br class="timeline-break"/>Jan. 2013</h4>
                       <h4 class="subheading">Safran Aero Boosters</h4>
                     </div>
                     <div class="timeline-body" id="safran2">
@@ -307,7 +352,7 @@
                   </div>
                   <div class="timeline-panel">
                     <div class="timeline-heading" id="iac">
-                      <h4>Sep. 2013-Feb. 2014</h4>
+                      <h4>Sep. 2013-<br class="timeline-break"/>Feb. 2014</h4>
                       <h4 class="subheading">Inter Action Consultants</h4>
                     </div>
                     <div class="timeline-body" id="iac2">
@@ -343,50 +388,77 @@
                 </ul>
               </div>
             </div>
-            <div class="row" style="padding-top: 0px;">
-              <div id="sb5" class="col-sm-6 story-border5"></div>
-              <div class="col-sm-6"></div>
+            <div class="desk row" style="padding-top: 0px;">
+              <div id="sb5desk" class="col-sm-6 story-border5"></div>
+			  <div class="col-sm-6"></div>
+            </div>
+			<div class="mob row">
+              <div class="col-xs-2" style="height: 20px;"></div>
+            </div>
+			<div class="mob row" style="padding-top: 0px;">
+              <div id="sb5mob" class="col-xs-2 story-border5"></div>
             </div>
           </div>
         </section>
 
         <!-- Skills Section -->
         <section id="skills" class="skills-section text-center" style="padding-top: 0px;">
-          <div class="row" style="padding-top: 0px;">
-            <div id="skb1" class="col-sm-6 skills-border1"></div>
-            <div class="col-sm-6"></div>
+          <div class="desk row" style="padding-top: 0px;">
+            <div id="skb1desk" class="col-sm-6 skills-border1"></div>
+          </div>
+		  <div class="mob row" style="padding-top: 0px;">
+            <div id="skb1mob" class="col-xs-2 skills-border1"></div>
           </div>
           <!-- TITLE -->
-          <div class="row" style="padding-top:0px; padding-bottom: 0px;">
+          <div class="desk row" style="padding-top:0px; padding-bottom: 0px;">
             <div class="col-sm-4"></div>
-            <div id="skb2" class="col-sm-4 text-center skills-border2" style="">
+            <div id="skb2desk" class="col-sm-4 text-center skills-border2">
               <div><h2 class="section-heading">Skills</h2>
                 <h3 class="section-subheading ">What I've learned through education, work and life</h3></div>
-              </div>
-              <div id="skb3" class="col-sm-2 skills-border3" style=""></div>
-              <div class="col-sm-2" style="height: 150px;overflow:hidden; padding-left: 0px;">
-                <div style="height: 35px; width: 230px; float: left;"></div>
-                <div id="skb4" class="skills-border4" style=""></div>
-              </div>
             </div>
+            <div id="skb3desk" class="col-sm-2 skills-border3" style=""></div>
+            <div class="col-sm-2" style="height: 150px;overflow:hidden; padding-left: 0px;">
+              <div style="height: 35px; width: 230px; float: left;"></div>
+              <div id="skb4desk" class="skills-border4" style=""></div>
+            </div>
+          </div>
+		  <div class="mob row" style="padding-top:0px; padding-bottom: 0px;">
+			<div class="col-xs-1"></div>
+            <div id="skb2mob" class="col-xs-10 text-center skills-border2">
+              <div><h2 class="section-heading">Skills</h2>
+              <h3 class="section-subheading ">What I've learned through education, work and life</h3></div>
+            </div>
+            <div id="skb3mob" class="col-xs-2 skills-border3"></div>
+          </div>
             <!-- PROGRAMMING -->
-            <div class="row">
+            <div class="desk row">
               <div class="col-sm-2" style="text-align: center;"></div>
-              <div id="skb5" class="col-sm-8 skills-border5"><p style="margin: 0px; line-height: 1;">Programming languages I know</p></div>
-              <div id="skb6" class="col-sm-2 skills-border6"></div>
+              <div id="skb5desk" class="col-sm-8 skills-border5"><p style="margin: 0px; line-height: 1;">Programming languages I know</p></div>
+              <div id="skb6desk" class="col-sm-2 skills-border6"></div>
             </div>
-            <div class="row">
-              <div id="skb7" class="col-sm-2 skills-border7" style=""></div>
+			<div class="mob row">
+              <div class="col-xs-2" style="width: 47px;"></div>
+              <div id="skb5mob" class="col-xs-9 skills-border5"><p style="margin: 0px; line-height: 1;">Programming languages I know</p></div>
+            </div>
+            <div class="desk row">
+              <div id="skb7desk" class="col-sm-2 skills-border7" style=""></div>
               <div class="col-sm-2 html" style="padding-top: 20px; text-align: center; height: 350px;" class="ct-chart ct-perfect-fourth"><div id="chart1"><h4>HTML5/CSS3</h4></div></div>
               <div class="col-sm-2 javascript" style="padding-top: 20px; text-align: center;" class="ct-chart ct-perfect-fourth" id="chart2"><h4>JavaScript</h4></div>
               <div class="col-sm-2 cpp" style="padding-top: 20px; text-align: center;" class="ct-chart ct-perfect-fourth" id="chart3"><h4>C++</h4></div>
               <div class="col-sm-2 java" style="padding-top: 20px; text-align: center;" class="ct-chart ct-perfect-fourth" id="chart4"><h4>Java</h4></div>
               <div class="col-sm-2" style="text-align: center;"></div>
             </div>
+			<div class="mob row">
+              <div id="skb7mob" class="col-xs-2 skills-border7"></div>
+              <div id="skb7-1" class="col-xs-8 skills-border7-1" class="ct-chart ct-perfect-fourth"><div id="chart1mob"><h4>HTML5/CSS3</h4></div></div>
+              <div id="skb7-2" class="col-xs-8 skills-border7-2" class="ct-chart ct-perfect-fourth"><div id="chart2mob"><h4>JavaScript</h4></div></div>
+              <div id="skb7-3" class="col-xs-8 skills-border7-3" class="ct-chart ct-perfect-fourth"><div id="chart3mob"><h4>C++</h4></div></div>
+              <div id="skb7-4" class="col-xs-8 skills-border7-4" class="ct-chart ct-perfect-fourth"><div id="chart4mob"><h4>Java</h4></div></div>
+            </div>
             <!-- LANGUAGES -->
             <div class="row">
-              <div id="skb8" class="col-sm-2 skills-border8"></div>
-              <div id="skb9" class="col-sm-8 skills-border9"><p style="margin: 0px; line-height: 1;">Languages I speak, read and write</p></div>
+              <div id="skb8desk" class="col-sm-2 skills-border8"></div>
+              <div id="skb9desk" class="col-sm-8 skills-border9"><p style="margin: 0px; line-height: 1;">Languages I speak, read and write</p></div>
               <div class="col-sm-2" style="text-align: center;"></div>
             </div>
             <div class="row">
@@ -395,18 +467,18 @@
               <div class="col-sm-2 lfr" style="padding-top: 20px;" class="ct-chart ct-perfect-fourth" id="chartfr">French</div>
               <div class="col-sm-2 len" style="padding-top: 20px;" class="ct-chart ct-perfect-fourth" id="charten">English</div>
               <div class="col-sm-2 lsp" style="padding-top: 20px;" class="ct-chart ct-perfect-fourth" id="chartsp">Spanish</div>
-              <div id="skb10" class="col-sm-1 skills-border10"></div>
+              <div id="skb10desk" class="col-sm-1 skills-border10"></div>
               <div class="col-sm-2"></div>
             </div>
             <!-- MOOCS -->
             <div class="row">
               <div class="col-sm-2"></div>
-              <div id="skb11" class="col-sm-8 skills-border11"><p style="margin: 0px; line-height: 1;">MOOCS</p></div>
+              <div id="skb11desk" class="col-sm-8 skills-border11"><p style="margin: 0px; line-height: 1;">MOOCS</p></div>
               <div class="col-sm-2" style="height: 20px;"></div>
             </div>
             <div class="row">
               <div class="col-sm-2"></div>
-              <div id="skb12" class="col-sm-1 skills-border12"></div>
+              <div id="skb12desk" class="col-sm-1 skills-border12"></div>
               <div class="col-sm-2 mgame" style="padding-top: 20px; text-align: center;">
                 <i class="glyphicon glyphicon-education fa-2x"></i> Intro to Game Development - MICHIGAN STATE University (
                 <a href="https://www.coursera.org/learn/game-development/home/welcome" target="_blank">course</a>)</div>
@@ -421,9 +493,9 @@
                   </div>
                   <div class="row">
                     <div class="col-sm-2" style="height: 50px;"></div>
-                    <div id="skb13" class="col-sm-2 skills-border13" style=""></div>
-                    <div id="skb14" class="col-sm-2 skills-border14" style=""></div>
-                    <div id="skb15" class="col-sm-2 skills-border15" style=""></div>
+                    <div id="skb13desk" class="col-sm-2 skills-border13" style=""></div>
+                    <div id="skb14desk" class="col-sm-2 skills-border14" style=""></div>
+                    <div id="skb15desk" class="col-sm-2 skills-border15" style=""></div>
                     <div class="col-sm-2"></div>
                     <div class="col-sm-2"></div>
                   </div>
@@ -576,7 +648,7 @@
                     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
                     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
                     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-                    <script src="vendor/progressbar/progressbar.js"></script>
+                    <script src="vendor/underscore/underscore-min.js"></script>
 
                     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
                     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
