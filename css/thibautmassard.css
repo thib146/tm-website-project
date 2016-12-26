@@ -684,9 +684,10 @@ a:focus {
 }
 .skills-border11 {
   text-align: center;
+  margin-top: 50px;
   vertical-align: text-bottom;
-  border-right: solid;
-  border-bottom: solid;
+  border-style: solid;
+  border-radius: 18px;
   border-width: 1px;
   border-color: transparent;
 }
@@ -696,11 +697,12 @@ a:focus {
   -webkit-animation-iteration-count: 1;
   -webkit-animation-delay: 2.3s;
 }
-.skills-border12 {
-  border-left: solid;
+.skills-border12m {
+  border-right: solid;
   border-width: 1px;
   border-color: transparent;
-  height: 300px;
+  height: 280px;
+  width: 70px;
 }
 .skills-border12-animation {
   -webkit-animation: border-anim 0.5s forwards;
@@ -708,9 +710,13 @@ a:focus {
   -webkit-animation-iteration-count: 1;
   -webkit-animation-delay: 2.5s;
 }
-.skills-border13 {
+.skills-border13m {
   border-top: solid;
+  border-right: solid;
   border-width: 1px;
+  height: 50px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
   border-color: transparent;
 }
 .skills-border13-animation {
@@ -816,6 +822,29 @@ a:focus {
     border-width: 1px;
     border-color: transparent;
     height: 350px;
+  }
+  .skills-border11 {
+    text-align: center;
+    margin-top: 0px;
+    vertical-align: text-bottom;
+    border-top: none;
+    border-left: none;
+    border-right: solid;
+    border-bottom: solid;
+    border-radius: 0px;
+    border-width: 1px;
+    border-color: transparent;
+  }
+  .skills-border12d {
+    border-left: solid;
+    border-width: 1px;
+    border-color: transparent;
+    height: 300px;
+  }
+  .skills-border13d {
+    border-top: solid;
+    border-width: 1px;
+    border-color: transparent;
   }
 }
 @-webkit-keyframes border-anim {
