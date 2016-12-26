@@ -286,13 +286,15 @@
     document.getElementById('skb3mob').className += " skills-border3-animation";
     document.getElementById('skb5mob').className += " skills-border5-animation";
     document.getElementById('skb7mob').className += " skills-border7-animation";
-    document.getElementById('skb7-1').className += " skills-border7-1-animation";
+    document.getElementById('skb7-1').className += " skills-border7-animation";
     document.getElementById('skb7-2').className += " skills-border7-animation";
     document.getElementById('skb7-3').className += " skills-border7-animation";
     document.getElementById('skb7-4').className += " skills-border7-animation";
     document.getElementById('skb8mob').className += " skills-border8-animation";
-    document.getElementById('skb9mob').className += " skills-border9-animation";
     document.getElementById('skb10mob').className += " skills-border10-animation";
+    document.getElementById('skb10-1').className += " skills-border10-animation";
+    document.getElementById('skb10-2').className += " skills-border10-animation";
+    document.getElementById('skb10-3').className += " skills-border10-animation";
     document.getElementById('skb11mob').className += " skills-border11-animation";
     document.getElementById('skb12mob').className += " skills-border12-animation";
     document.getElementById('skb13mob').className += " skills-border13-animation";

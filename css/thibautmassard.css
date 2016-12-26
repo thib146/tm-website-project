@@ -642,13 +642,41 @@ a:focus {
   -webkit-animation-iteration-count: 1;
   -webkit-animation-delay: 1.9s;
 }
-.skills-border10 {
+.skills-border10m {
   border-right: solid;
   border-width: 1px;
   border-color: transparent;
-  height: 350px;
+  height: 50px;
+  width: 70px;
+}
+.skills-border10-1 {
+  top: 50px;
+  left: 0px;
+  border-left: solid;
+  border-width: 1px;
+  border-color: transparent;
+}
+.skills-border10-2 {
+  top: 50px;
+  left: 70px;
+  border-left: solid;
+  border-width: 1px;
+  border-color: transparent;
+}
+.skills-border10-3 {
+  top: 50px;
+  left: 70px;
+  border-left: solid;
+  border-width: 1px;
+  border-color: transparent;
 }
 .skills-border10-animation {
+  -webkit-animation: border-anim 0.5s forwards;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-delay: 2.1s;
+}
+.skills-border10-1-animation {
   -webkit-animation: border-anim 0.5s forwards;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: 1;
@@ -782,6 +810,12 @@ a:focus {
     border-radius: 0px;
     border-width: 1px;
     border-color: transparent;
+  }
+  .skills-border10d {
+    border-right: solid;
+    border-width: 1px;
+    border-color: transparent;
+    height: 350px;
   }
 }
 @-webkit-keyframes border-anim {
