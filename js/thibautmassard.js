@@ -35,7 +35,7 @@
     }
   })
 
-  // Images and charts revealing while scrolling - using scrollreveal.js
+  // Images and charts revealing on scroll - using scrollreveal.js
   window.sr = ScrollReveal();
   sr.reveal('.btnreveal', {delay:4700});
   sr.reveal('.image1', {delay:300});
@@ -202,7 +202,7 @@
   drawChartTM(chartenmob);
   drawChartTM(chartspmob);
 
-  // Border reveal throughout the page, depending on the window level in px
+  // Border reveal throughout the page, depending on the scroll level in px
   window.onscroll = function() {bordersall()};
   function bordersall() {
     // ************ DESKTOP ANIMATIONS ************** //
