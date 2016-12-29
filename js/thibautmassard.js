@@ -215,6 +215,12 @@
     if (document.body.scrollTop > 3600 || document.documentElement.scrollTop > 3600) {
       borders3();
     }
+    if (document.body.scrollTop > 5100 || document.documentElement.scrollTop > 5100) {
+      borders7();
+    }
+    if (document.body.scrollTop > 5600 || document.documentElement.scrollTop > 5600) {
+      borders8();
+    }
     // ************ MOBILE ANIMATIONS ************** //
     if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
       borders4();
@@ -263,6 +269,27 @@
     document.getElementById('skb13desk').className += " skills-border13-animation";
     document.getElementById('skb14desk').className += " skills-border14-animation";
     document.getElementById('skb15desk').className += " skills-border15-animation";
+  });
+  var borders7 = _.once(function borders7a() {
+    document.getElementById('pb1desk').className += " projects-border1-animation";
+    document.getElementById('pb2desk').className += " projects-border2-animation";
+    document.getElementById('pb3desk').className += " projects-border3-animation";
+    document.getElementById('pb4desk').className += " projects-border4-animation";
+    document.getElementById('pb5desk').className += " projects-border5-animation";
+    document.getElementById('pb6desk').className += " projects-border6-animation";
+  });
+  var borders8 = _.once(function borders8a() {
+    document.getElementById('ct1desk').className += " contact-border1-animation";
+    document.getElementById('ct2desk').className += " contact-border2-animation";
+    document.getElementById('ct3desk').className += " contact-border3-animation";
+    document.getElementById('ct4desk').className += " contact-border4-animation";
+    document.getElementById('ct5desk').className += " contact-border5-animation";
+    document.getElementById('ct6desk').className += " contact-border6-animation";
+    document.getElementById('ct7desk').className += " contact-border7-animation";
+    document.getElementById('ct8desk').className += " contact-border8-animation";
+    document.getElementById('ct9desk').className += " contact-border9-animation";
+    document.getElementById('ct10desk').className += " contact-border10-animation";
+    document.getElementById('ct11desk').className += " contact-border11-animation";
   });
   var borders4 = _.once(function borders4a() {
     document.getElementById('ib1mob').className += " intro-border1-animation";
