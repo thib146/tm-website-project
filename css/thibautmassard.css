@@ -957,7 +957,7 @@ a:focus {
   -webkit-animation-delay: 0.5s;
 }
 .contact-border3 {
-  border-left: solid;
+  border-right: solid;
   border-width: 1px;
   border-color: transparent;
   height: 50px;
@@ -1019,11 +1019,10 @@ a:focus {
   -webkit-animation-delay: 1.5s;
 }
 .contact-border8 {
-  border-top: solid;
-  border-left: solid;
+  border-right: solid;
   border-width: 1px;
   border-color: transparent;
-  height: 20px;
+  height: 30px;
 }
 .contact-border8-animation {
   -webkit-animation: border-anim 0.5s forwards;
@@ -1070,7 +1069,21 @@ a:focus {
   -webkit-animation-delay: 2.3s;
 }
 @media screen and (min-width: 768px) {
-
+  .contact-border3 {
+    border-left: solid;
+    border-right: none;
+    border-width: 1px;
+    border-color: transparent;
+    height: 50px;
+  }
+  .contact-border8 {
+    border-top: solid;
+    border-left: solid;
+    border-right: none;
+    border-width: 1px;
+    border-color: transparent;
+    height: 20px;
+  }
 }
 @-webkit-keyframes border-anim {
   0% {
