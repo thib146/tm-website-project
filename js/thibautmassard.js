@@ -290,6 +290,9 @@
     document.getElementById('ct9desk').className += " contact-border9-animation";
     document.getElementById('ct10desk').className += " contact-border10-animation";
     document.getElementById('ct11desk').className += " contact-border11-animation";
+    document.getElementById('socialbtn1').className += " social-button-animation";
+    document.getElementById('socialbtn2').className += " social-button-animation";
+    document.getElementById('socialbtn3').className += " social-button-animation";
   });
   var borders4 = _.once(function borders4a() {
     document.getElementById('ib1mob').className += " intro-border1-animation";

@@ -1872,7 +1872,7 @@ button > a:hover {
   top: 6px;
 }
 .btn-default {
-  border: 1px solid #1ec503;
+  border: 1px solid transparent;
   color: #FFFFFF;
   background-color: transparent;
 }
@@ -1883,7 +1883,28 @@ button > a:hover {
   color: black;
   background-color: #1ec503;
 }
-
+.social-button-animation {
+  -webkit-animation: btn-default-border-anim 0.5s forwards;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-delay: 2.3s;
+}
+@-webkit-keyframes btn-default-border-anim {
+  0% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: #1ec503;
+  }
+}
+@-moz-keyframes btn-default-border-anim {
+  0% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: #1ec503;
+  }
+}
 /* Button 7b */
 .btn-7b {
   overflow: hidden;
