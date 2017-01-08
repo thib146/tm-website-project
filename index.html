@@ -549,14 +549,16 @@
       </section>
 
       <!-- Projects Section -->
-      <section id="projects" class="projects-section text-center" style="padding-top: 0px;">
-        <div class="container">
-          <div class="row">
-            <div id="pb1desk" class="col-sm-6 projects-border1">
-            </div>
+      <section id="projects" class="projects-section text-center" style="padding-top: 0px; padding-bottom: 0px;">
+        <div class="container" style="margin-bottom: 0px; padding-bottom: 0px;">
+          <div class="desk row">
+            <div id="pb1desk" class="col-sm-6 projects-border1"></div>
             <div class="col-sm-6"></div>
           </div>
-          <div class="row" style="padding-top:0px;">
+          <div class="mob row">
+            <div id="pb1mob" class="col-xs-6 projects-border1"></div>
+          </div>
+          <div class="desk row" style="padding-top:0px;">
             <div class="col-sm-4"></div>
             <div id="pb2desk" class="col-sm-4 text-center projects-border2">
               <div><h2 class="section-heading">Projects</h2>
@@ -564,16 +566,27 @@
               </div>
             </div>
           </div>
-          <div class="row">
+          <div class="mob row">
+            <div class="col-xs-1"></div>
+            <div id="pb2mob" class="col-xs-10 text-center projects-border2">
+              <div><h2 class="section-heading">Projects</h2>
+                <h3 class="section-subheading text-muted">Some of my personal projects made on my free time</h3>
+              </div>
+            </div>
+          </div>
+          <div class="desk row">
             <div id="pb3desk" class="col-sm-6 projects-border3"></div>
             <div class="col-sm-6"></div>
           </div>
-          <div class="row">
+          <div class="mob row">
+            <div id="pb3mob" class="col-xs-6 projects-border3"></div>
+          </div>
+          <div class="desk row">
             <div class="col-sm-3"></div>
             <div class="col-sm-1"></div>
             <div id="pb4desk" class="col-sm-4 projects-border4"></div>
           </div>
-          <div class="row">
+          <div class="desk row">
             <div class="grid">
               <figure class="effect-layla">
                 <img src="img/intro-bg.jpg" alt=""/>
@@ -593,14 +606,48 @@
               </figure>
             </div>
           </div>
-          <div class="row">
+          <div class="mob row">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-10">
+              <div class="grid">
+                <figure class="effect-layla">
+                  <img src="img/intro-bg.jpg" alt=""/>
+                  <figcaption>
+                    <h2>This <span>Website</span></h2>
+                    <p>I coded this website from scratch, using bootstrap and some cool effects found on the web like scrollreveal.js or chartist.js.
+                      <br><a href="https://github.com/thib146" target="_blank">See the code on my GitHub!</a>
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="row">
+              <div id="pb4mob" class="col-xs-6 projects-border4"></div>
+            </div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-10">
+              <div class="grid">
+                <figure class="effect-layla">
+                  <img src="img/intro-bg2.jpg" alt=""/>
+                  <figcaption>
+                    <h2>Arcade <span>Games</span></h2>
+                    <p>Some simple games I made with Unity thanks to the MOOC I did on Game Development.<br><a href="#">Try them!</a></p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="desk row">
             <div class="col-sm-3"></div>
             <div class="col-sm-1"></div>
             <div id="pb5desk" class="col-sm-4 projects-border5"></div>
           </div>
-          <div class="row" style="padding-bottom: 0px; margin-bottom: 0px;">
+          <div class="desk row" style="padding-bottom: 0px; margin-bottom: 0px;">
             <div id="pb6desk" class="col-sm-6 projects-border6"></div>
             <div class="col-sm-6"></div>
+          </div>
+          <div class="mob row" style="padding-bottom: 0px; margin-bottom: 0px;">
+            <div id="pb6mob" class="col-xs-6 projects-border6"></div>
           </div>
         </div>
       </section>
@@ -675,7 +722,7 @@
       <!-- Footer -->
       <footer>
         <div class="container text-center">
-          &copy; Thibaut Massard 2016
+          &copy; Thibaut Massard 2017
         </div>
       </footer>
 

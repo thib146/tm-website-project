@@ -203,37 +203,40 @@
   drawChartTM(chartspmob);
 
   // Border reveal throughout the page, depending on the scroll level in px
-  window.onscroll = function() {bordersall()};
-  function bordersall() {
-    // ************ DESKTOP ANIMATIONS ************** //
+  window.onscroll = function() {bordersReveal()};
+  function bordersReveal() {
+    // ************ DESKTOP BORDER ANIMATIONS ************** //
     if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
-      borders1();
+      introBordersRvDesk();
     }
     if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
-      borders2();
+      storyBordersRvDesk();
     }
     if (document.body.scrollTop > 3600 || document.documentElement.scrollTop > 3600) {
-      borders3();
+      skillsBordersRvDesk();
     }
     if (document.body.scrollTop > 5100 || document.documentElement.scrollTop > 5100) {
-      borders7();
+      projectsBordersRvDesk();
     }
     if (document.body.scrollTop > 5600 || document.documentElement.scrollTop > 5600) {
-      borders8();
+      contactBordersRvDesk();
     }
-    // ************ MOBILE ANIMATIONS ************** //
+    // ************ MOBILE BORDER ANIMATIONS ************** //
     if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
-      borders4();
+      introBordersRvMob();
     }
     if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
-      borders5();
+      storyBordersRvMob();
     }
-    if (document.body.scrollTop > 4200 || document.documentElement.scrollTop > 4200) {
-      borders6();
+    if (document.body.scrollTop > 4000 || document.documentElement.scrollTop > 4000) {
+      skillsBordersRvMob();
+    }
+    if (document.body.scrollTop > 6000 || document.documentElement.scrollTop > 6000) {
+      projectsBordersRvMob();
     }
   }
 
-  var borders1 = _.once(function borders1a() {
+  var introBordersRvDesk = _.once(function() {
     document.getElementById('ib1desk').className += " intro-border1-animation";
     document.getElementById('ib2desk').className += " intro-border2-animation";
     document.getElementById('ib3desk').className += " intro-border3-animation";
@@ -246,14 +249,14 @@
     document.getElementById('ib10desk').className += " intro-border10-animation";
     document.getElementById('ib11desk').className += " intro-border11-animation";
   });
-  var borders2 = _.once(function borders2a() {
+  var storyBordersRvDesk = _.once(function() {
     document.getElementById('sb1desk').className += " story-border1-animation";
     document.getElementById('sb2desk').className += " story-border2-animation";
     document.getElementById('sb3desk').className += " story-border3-animation";
     document.getElementById('sb4desk').className += " timeline-animation";
     document.getElementById('sb5desk').className += " story-border5-animation";
   });
-  var borders3 = _.once(function borders3a() {
+  var skillsBordersRvDesk = _.once(function() {
     document.getElementById('skb1desk').className += " skills-border1-animation";
     document.getElementById('skb2desk').className += " skills-border2-animation";
     document.getElementById('skb3desk').className += " skills-border3-animation";
@@ -270,7 +273,7 @@
     document.getElementById('skb14desk').className += " skills-border14-animation";
     document.getElementById('skb15desk').className += " skills-border15-animation";
   });
-  var borders7 = _.once(function borders7a() {
+  var projectsBordersRvDesk = _.once(function() {
     document.getElementById('pb1desk').className += " projects-border1-animation";
     document.getElementById('pb2desk').className += " projects-border2-animation";
     document.getElementById('pb3desk').className += " projects-border3-animation";
@@ -278,7 +281,7 @@
     document.getElementById('pb5desk').className += " projects-border5-animation";
     document.getElementById('pb6desk').className += " projects-border6-animation";
   });
-  var borders8 = _.once(function borders8a() {
+  var contactBordersRvDesk = _.once(function() {
     document.getElementById('ct1desk').className += " contact-border1-animation";
     document.getElementById('ct2desk').className += " contact-border2-animation";
     document.getElementById('ct3desk').className += " contact-border3-animation";
@@ -294,7 +297,7 @@
     document.getElementById('socialbtn2').className += " social-button-animation";
     document.getElementById('socialbtn3').className += " social-button-animation";
   });
-  var borders4 = _.once(function borders4a() {
+  var introBordersRvMob = _.once(function() {
     document.getElementById('ib1mob').className += " intro-border1-animation";
     document.getElementById('ib2mob').className += " intro-border2-animation";
     document.getElementById('ib3mob').className += " intro-border3-animation";
@@ -303,14 +306,14 @@
     document.getElementById('ib9mob').className += " intro-border9-animation";
     document.getElementById('ib11mob').className += " intro-border11-animation";
   });
-  var borders5 = _.once(function borders5a() {
+  var storyBordersRvMob = _.once(function() {
     document.getElementById('sb1mob').className += " story-border1-animation";
     document.getElementById('sb2mob').className += " story-border2-animation";
     document.getElementById('sb3mob').className += " story-border3-animation";
     document.getElementById('sb4desk').className += " timeline-animation";
     document.getElementById('sb5mob').className += " story-border5-animation";
   });
-  var borders6 = _.once(function borders6a() {
+  var skillsBordersRvMob = _.once(function() {
     document.getElementById('skb1mob').className += " skills-border1-animation";
     document.getElementById('skb2mob').className += " skills-border2-animation";
     document.getElementById('skb3mob').className += " skills-border3-animation";
@@ -330,6 +333,13 @@
     document.getElementById('skb13mob').className += " skills-border13-animation";
     document.getElementById('skb14mob').className += " skills-border14-animation";
     document.getElementById('skb15mob').className += " skills-border15-animation";
+  });
+  var projectsBordersRvMob = _.once(function() {
+    document.getElementById('pb1mob').className += " projects-border1-animation";
+    document.getElementById('pb2mob').className += " projects-border2-animation";
+    document.getElementById('pb3mob').className += " projects-border3-animation";
+    document.getElementById('pb4mob').className += " projects-border4-animation";
+    document.getElementById('pb6mob').className += " projects-border6-animation";
   });
 
   // Background scrolls speeds
