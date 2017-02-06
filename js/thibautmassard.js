@@ -54,11 +54,12 @@
   sr.reveal('.mjava', {delay:300});
   sr.reveal('.mweb', {delay:500});
   sr.reveal('.mgame', {delay:700});
+  sr.reveal('.mudacity', {delay:900});
 
-  // HTML/CSS Chart
+  // Java Chart
   var chart1options1 = {
-    labels: ['60%'],
-    series: [60]
+    labels: ['90%'],
+    series: [90]
   };
   var chart1options2 = {
     donut: true,
@@ -68,10 +69,10 @@
   };
   var chart1 = new Chartist.Pie('#chart1', chart1options1, chart1options2);
   var chart1mob = new Chartist.Pie('#chart1mob', chart1options1, chart1options2);
-  // Javascript Chart
+  // HTML/CSS Chart
   var chart2options1 = {
-    labels: ['40%'],
-    series: [40]
+    labels: ['100%'],
+    series: [100]
   };
   var chart2options2 = {
     donut: true,
@@ -81,10 +82,10 @@
   };
   var chart2 = new Chartist.Pie('#chart2', chart2options1, chart2options2);
   var chart2mob = new Chartist.Pie('#chart2mob', chart2options1, chart2options2);
-  // C++ Chart
+  // JavaScript Chart
   var chart3options1 = {
-    labels: ['50%'],
-    series: [50]
+    labels: ['80%'],
+    series: [80]
   };
   var chart3options2 = {
     donut: true,
@@ -94,10 +95,10 @@
   };
   var chart3 = new Chartist.Pie('#chart3', chart3options1, chart3options2);
   var chart3mob = new Chartist.Pie('#chart3mob', chart3options1, chart3options2);
-  // Java Chart
+  // C++ Chart
   var chart4options1 = {
-    labels: ['50%'],
-    series: [50]
+    labels: ['70%'],
+    series: [70]
   };
   var chart4options2 = {
     donut: true,

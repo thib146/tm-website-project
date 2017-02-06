@@ -701,7 +701,7 @@ a:focus {
   border-right: solid;
   border-width: 1px;
   border-color: transparent;
-  height: 280px;
+  height: 360px;
   width: 70px;
 }
 .skills-border12-animation {
@@ -836,7 +836,7 @@ a:focus {
     border-color: transparent;
   }
   .skills-border12d {
-    border-left: solid;
+    border-right: solid;
     border-width: 1px;
     border-color: transparent;
     height: 300px;
