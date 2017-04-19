@@ -35,15 +35,44 @@
     }
   })
 
+  // Swiper initialization
+  var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    paginationClickable: true,
+    loop: true,
+    grabCursor: true,
+    effect: 'coverflow',
+    coverflow: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true
+        },
+
+    // If we need pagination
+    pagination: '.swiper-pagination',
+
+    // Navigation arrows
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+
+    // And if we need scrollbar
+    scrollbar: '.swiper-scrollbar',
+  })
+
   // Images and charts revealing on scroll - using scrollreveal.js
   window.sr = ScrollReveal();
   sr.reveal('.btnreveal', {delay:4700});
+  sr.reveal('.btnreveal2', {delay:5100});
   sr.reveal('.image1', {delay:300});
   sr.reveal('.image2', {delay:300});
   sr.reveal('.image3', {delay:300});
   sr.reveal('.image4', {delay:300});
   sr.reveal('.image5', {delay:300});
   sr.reveal('.image6', {delay:300});
+  sr.reveal('.image7', {delay:300});
   sr.reveal('.java', {delay:1100});
   sr.reveal('.cpp', {delay:1300});
   sr.reveal('.javascript', {delay:1600});
@@ -282,6 +311,7 @@
     document.getElementById('pb2desk').className += " projects-border2-animation";
     document.getElementById('pb3desk').className += " projects-border3-animation";
     document.getElementById('pb4desk').className += " projects-border4-animation";
+    document.getElementById('pb4-2desk').className += " projects-border4-2-animation";
     document.getElementById('pb5desk').className += " projects-border5-animation";
     document.getElementById('pb6desk').className += " projects-border6-animation";
   });
@@ -334,13 +364,13 @@
     document.getElementById('skb10-3').className += " skills-border10-animation";
     document.getElementById('skb11mob').className += " skills-border11-animation";
     document.getElementById('skb12mob').className += " skills-border12-animation";
+    document.getElementById('skb13mob1').className += " skills-border131-animation";
     document.getElementById('skb13mob').className += " skills-border13-animation";
   });
   var projectsBordersRvMob = _.once(function() {
     document.getElementById('pb1mob').className += " projects-border1-animation";
     document.getElementById('pb2mob').className += " projects-border2-animation";
     document.getElementById('pb3mob').className += " projects-border3-animation";
-    document.getElementById('pb4mob').className += " projects-border4-animation";
     document.getElementById('pb6mob').className += " projects-border6-animation";
   });
   var contactBordersRvMob = _.once(function() {

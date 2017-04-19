@@ -78,6 +78,32 @@ a:focus {
   -ms-flex: 1;
   flex: 1;
 }
+.textfollow {
+  padding-top: 35px;
+  left: 20px;
+  margin-left: 30px;
+  visibility: hidden;
+}
+@media screen and (min-width: 768px) {
+  .textfollow {
+    padding-top: 35px;
+    left: -15px;
+    margin-left: 0px;
+  }
+  .textfollow a {
+    color: transparent;
+  }
+}
+@media screen and (min-width: 992px) {
+  .textfollow {
+    padding-top: 35px;
+    left: -35px;
+    margin-left: 0px;
+  }
+  .textfollow a {
+    color: transparent;
+  }
+}
 #progbar1 {
   display: block;
   margin: auto;
@@ -228,7 +254,7 @@ a:focus {
   border-right: solid;
   border-width: 1px;
   border-color: transparent;
-  height: 150px;
+  height: 110px;
   -webkit-animation: border-anim 1s forwards;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: 1;
@@ -245,7 +271,25 @@ a:focus {
     border-right: solid;
     border-width: 1px;
     border-color: transparent;
-    height: 200px;
+    height: 100px;
+    -webkit-animation: border-anim 1s forwards;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-delay: 5.2s;
+  }
+  .mob {
+    display: none;
+  }
+  .desk {
+    display: initial;
+  }
+}
+@media screen and (min-width: 992px) {
+  .header-border {
+    border-right: solid;
+    border-width: 1px;
+    border-color: transparent;
+    height: 150px;
     -webkit-animation: border-anim 1s forwards;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: 1;
@@ -701,7 +745,7 @@ a:focus {
   border-right: solid;
   border-width: 1px;
   border-color: transparent;
-  height: 360px;
+  height: 390px;
   width: 70px;
 }
 .skills-border12-animation {
@@ -710,14 +754,27 @@ a:focus {
   -webkit-animation-iteration-count: 1;
   -webkit-animation-delay: 2.5s;
 }
-.skills-border13m {
+.skills-border13m1 {
   border-top: solid;
+  border-width: 1px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  border-color: transparent;
+}
+.skills-border13m {
+  /*border-top: solid;*/
   border-right: solid;
   border-width: 1px;
   height: 50px;
   margin-bottom: 0px;
   padding-bottom: 0px;
   border-color: transparent;
+}
+.skills-border131-animation {
+  -webkit-animation: border-anim 0.5s forwards;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-delay: 2.6s;
 }
 .skills-border13-animation {
   -webkit-animation: border-anim 0.5s forwards;
@@ -875,7 +932,6 @@ a:focus {
   border-right: solid;
   border-width: 1px;
   border-color: transparent;
-  height: 30px;
 }
 .projects-border3-animation {
   -webkit-animation: border-anim 0.5s forwards;
@@ -894,6 +950,12 @@ a:focus {
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-delay: 0.9s;
+}
+.projects-border4-2-animation {
+  -webkit-animation: border-anim 0.5s forwards;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-delay: 1.0s;
 }
 .projects-border5 {
   border-bottom: solid;
@@ -922,13 +984,26 @@ a:focus {
   -webkit-animation-delay: 1.3s;
 }
 @media screen and (min-width: 768px) {
+  .projects-border3 {
+    border-right: solid;
+    border-width: 1px;
+    border-color: transparent;
+    height: 30px;
+  }
   .projects-border4 {
     border-top: solid;
     border-left: solid;
     border-right: solid;
     border-width: 1px;
     border-color: transparent;
-    height: 30px;
+    height: 50px;
+  }
+  .projects-border4-2 {
+    border-left: solid;
+    border-right: solid;
+    border-width: 1px;
+    border-color: transparent;
+    height: 50px;
   }
 }
 .contact-border1 {
@@ -1185,6 +1260,9 @@ header .intro-text {
   padding-bottom: 0px;
   /*height: 100vh;*/
 }
+.spacer {
+  height: 80px;
+}
 header .intro-text .intro-lead-in {
   position: relative;
   font-family: "Courier";
@@ -1235,14 +1313,48 @@ header .intro-text .intro-heading {
 header span{
   animation: blink 1s infinite;
 }
+.custom-header span{
+  animation: blink 1s infinite;
+}
 @keyframes blink{
   to{ opacity: .0;}
 }
 @media screen and (min-width: 768px) {
   header .intro-text {
-    padding-top: 180px;
+    padding-top: 50px;
     padding-bottom: 0px;
     /*height: 100vh;*/
+  }
+  .spacer {
+    height: 20px;
+  }
+  header .intro-text .intro-lead-in {
+    font-family: "Courier";
+    /*font-style: italic;*/
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 15px;
+    margin-bottom: 0px;
+    width: 6em;
+  }
+  header .intro-text .intro-heading {
+    font-family: "Courier";
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 75px;
+    margin-bottom: 10px;
+    width: 15em;
+  }
+}
+@media screen and (min-width: 992px) {
+  header .intro-text {
+    padding-top: 100px;
+    padding-bottom: 0px;
+    /*height: 100vh;*/
+  }
+  .spacer {
+    height: 60px;
   }
   header .intro-text .intro-lead-in {
     font-family: "Courier";
@@ -1622,6 +1734,229 @@ section h3.section-subheading {
     padding: 0 100px 20px 20px;
   }
 }
+.timeline {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+
+.project-pres:before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  background-color: white;
+  left: 10px;
+}
+.project-pres-animation:before {
+  -webkit-animation: project-pres-anim 0.7s forwards;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-delay: 0.9s;
+}
+@-webkit-keyframes project-pres-anim {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: #1ec503;
+  }
+}
+.project-pres > li {
+  display: inline-flex;
+  margin-top: 180px;
+  margin-right: 0px;
+  margin-left: 250px;
+  right: 225px;
+  bottom: 150px;
+  position: relative;
+}
+.project-pres > li:before,
+.project-pres > li:after {
+  content: " ";
+  display: inline-flex;
+}
+.project-pres > li:after {
+  clear: both;
+}
+.project-pres > li .project-pres-image {
+  left: 0;
+  margin-left: 0;
+  width: 170px;
+  height:170px;
+  position: absolute;
+  z-index: 100;
+  color: white;
+  border-radius: 25%;
+  border: 1px solid #1ec503;
+  text-align: center;
+  overflow: hidden;
+}
+.project-pres-image .overlayfront {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.project-pres-image .overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+.project-pres-image:hover .overlay {
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.project-pres-image img {
+  margin-top: 50px;
+  display: inline-block;
+  filter: brightness(60%);
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.project-pres-image:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.8);
+  -webkit-filter: brightness(0.8) blur(1px);
+  -webkit-transform: scale(1.5);
+}
+
+.project-pres-image h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 15px;
+  background-color: transparent;
+  color: #FFF;
+  padding: 0em 0;
+  margin-top: 25px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+.project-pres-image .overlayfront h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 12px;
+  color: #FFF;
+  padding: 0em 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.project-pres-image a, .project-pres-image p {
+  color: #FFF;
+  font-size: 15px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+.project-pres-image .overlayfront a, .project-pres-image .overlayfront p {
+  color: #FFF;
+  font-size: 11px;
+  padding-top: 0px;
+  margin-top: 0px;
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.project-pres-image:hover a, .project-pres-image:hover p, .project-pres-image:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0%,0);
+  transform: translate3d(0,0%,0);
+}
+.project-pres-image:hover .overlayfront a, .project-pres-image:hover .overlayfront p, .project-pres-image:hover .overlayfront h2 {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.project-pres-image h4 {
+  font-size: 10px;
+  color: #000;
+  margin-top: 12px;
+  line-height: 14px;
+}
+.project-pres > li:last-child {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .project-pres > li {
+    display: inline-flex;
+    margin-top: 150px;
+    margin-right: 0px;
+    margin-left: 300px;
+    margin-bottom: 50px;
+    right: 275px;
+    bottom: 150px;
+    position: relative;
+  }
+  .project-pres > li .project-pres-image {
+    width: 210px;
+    height:210px;
+  }
+  .project-pres-image .overlayfront h2 {
+    font-size: 14px;
+  }
+  .project-pres-image .overlayfront a, .project-pres-image .overlayfront p {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 996px) {
+  .project-pres > li {
+    margin-left: 470px;
+    right: 360px;
+  }
+  .project-pres > li .project-pres-image {
+    width: 210px;
+    height:210px;
+  }
+  .project-pres-image .overlayfront h2 {
+    font-size: 14px;
+  }
+  .project-pres-image .overlayfront a, .project-pres-image .overlayfront p {
+    font-size: 14px;
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+}
+
 .content-section {
   padding-top: 20px;
   width: 100%;
@@ -1641,7 +1976,7 @@ section h3.section-subheading {
   width: 100%;
   background-image: url('../img/header-bg2.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1660,7 +1995,7 @@ section h3.section-subheading {
   background:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7));
   background-image: url('../img/header-bg2.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1768,7 +2103,12 @@ section h3.section-subheading {
   background-size: cover;
   -o-background-size: cover;
 }
-#map {
+#map1 {
+  width: 100%;
+  height: 400px;
+  margin-top: 80px;
+}
+#map2 {
   width: 100%;
   height: 200px;
   margin-top: 100px;
@@ -1779,6 +2119,7 @@ section h3.section-subheading {
   }
   .intro-section {
     padding-top: 0px;
+    background-attachment: fixed;
   }
   .story-section {
     padding: 0px 0;
@@ -1791,10 +2132,7 @@ section h3.section-subheading {
   }
   .contact-section {
     padding-bottom: 50px;
-  }
-  #map {
-    height: 400px;
-    margin-top: 250px;
+    background-attachment: fixed;
   }
 }
 .color-2 {
@@ -2387,4 +2725,202 @@ figure.effect-layla:hover p,
 figure.effect-layla:hover img {
   -webkit-transition-delay: 0.15s;
   transition-delay: 0.15s;
+}
+
+/* Parallax base styles
+--------------------------------------------- */
+
+.parallax {
+  height: 500px; /* fallback for older browsers */
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 300px;
+  perspective: 300px;
+  -webkit-perspective-origin-x: 100%;
+  perspective-origin-x: 100%;
+}
+
+.parallax__group {
+  position: relative;
+  height: 500px; /* fallback for older browsers */
+  height: 100vh;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform-origin-x: 100%;
+  transform-origin-x: 100%;
+}
+
+.parallax__layer--fore {
+  -webkit-transform: translateZ(90px) scale(.7);
+  transform: translateZ(90px) scale(.7);
+  z-index: 1;
+}
+
+.parallax__layer--base {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 4;
+}
+
+.parallax__layer--back {
+  -webkit-transform: translateZ(-300px) scale(2);
+  transform: translateZ(-300px) scale(2);
+  z-index: 3;
+}
+
+.parallax__layer--deep {
+  -webkit-transform: translateZ(-600px) scale(3);
+  transform: translateZ(-600px) scale(3);
+  z-index: 2;
+}
+
+/* The Overlay (background) */
+.project-overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.project-overlay-content {
+    position: relative;
+    top: 10%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.project-overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+.project-overlay p {
+    margin-bottom: 10px;
+}
+
+.project-overlay-content a {
+  padding: 0px;
+  display: inline;
+  color: #1ec503;
+  font-size: 14px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.project-overlay a:hover, .project-overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.project-overlay .closebtn {
+    position: absolute;
+    top: 30px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .project-overlay a {font-size: 20px}
+    .project-overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+#wrapper {
+  display: table;
+  /*margin-left: 20px;
+  width: 90px;*/
+}
+#mobile-img-div {
+  display: table-footer-group;
+}
+#mobile-description {
+  display: table-header-group;
+}
+#wrapper2 {
+  display: table;
+  margin-left: 20px;
+  width: 90px;
+}
+#mobile-img-div2 {
+  display: table-footer-group;
+}
+#mobile-description2 {
+  display: table-header-group;
+}
+
+.img-app {
+    border-radius: 25px;
+    width: 176px;
+    height: 359px;
+}
+.img-app-tablet {
+    border-radius: 15px;
+    width: 299px;
+    height: 175px;
+}
+
+.swiper-container {
+    width: 266px;
+    height: 380px;
+}
+
+.swiper-slide {
+    text-align: center;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .project-overlay .closebtn {
+      top: 50px;
+  }
+  .swiper-container {
+      width: 400px;
+      height: 570px;
+  }
+  .img-app {
+      border-radius: 45px;
+      width: 264px;
+      height: 539px;
+  }
+  .img-app-tablet {
+      border-radius: 20px;
+      width: 449px;
+      height: 263px;
+  }
 }
